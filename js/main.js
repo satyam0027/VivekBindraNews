@@ -98,13 +98,19 @@ function initCookieBanner() {
   const accept = document.getElementById("cookie-accept");
   if (!banner || !accept) return;
 
+  function setCookiePadding(visible) {
+    document.body.classList.toggle("has-cookie-banner", visible);
+  }
+
   if (!localStorage.getItem("bbn_cookies_accepted")) {
     banner.classList.add("is-visible");
+    setCookiePadding(true);
   }
 
   accept.addEventListener("click", function () {
     localStorage.setItem("bbn_cookies_accepted", "1");
     banner.classList.remove("is-visible");
+    setCookiePadding(false);
   });
 }
 

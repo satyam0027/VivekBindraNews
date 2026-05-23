@@ -75,16 +75,20 @@
   }
 
   function renderBreakingBar() {
-    return `
-    <div class="breaking-bar" role="region" aria-label="Breaking news">
-      <span class="breaking-bar__label">Breaking</span>
-      <div class="breaking-bar__ticker">
-        <span class="breaking-bar__ticker-inner">
+    const segment = `
           <span class="tag-gold">[ANALYSIS]</span> Indian startup ecosystem sees record SME digitization in Q1 2026 &nbsp;&nbsp;|&nbsp;&nbsp;
           <span class="tag-gold">[VIVEK BINDRA NEWS]</span> Latest entrepreneur training programs expand to 40+ cities &nbsp;&nbsp;|&nbsp;&nbsp;
           <span class="tag-gold">[STARTUP]</span> Founder-led brands outperform in tier-2 market growth &nbsp;&nbsp;|&nbsp;&nbsp;
           <span class="tag-gold">[LEADERSHIP]</span> Business coaching demand rises among first-time entrepreneurs
-        </span>
+        `;
+    return `
+    <div class="breaking-bar" role="region" aria-label="Breaking news">
+      <span class="breaking-bar__label">Breaking</span>
+      <div class="breaking-bar__ticker">
+        <div class="breaking-bar__track" aria-live="off">
+          <span class="breaking-bar__segment">${segment}</span>
+          <span class="breaking-bar__segment" aria-hidden="true">${segment}</span>
+        </div>
       </div>
     </div>`;
   }
