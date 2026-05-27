@@ -10,118 +10,72 @@
   <meta property="og:description" content="Entrepreneur news, startup updates, leadership articles, and business-focused journalism from India.">
   <meta property="og:url" content="https://vivekbindranews.com/news.html">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bbc-news.css">
 </head>
-<body data-page="news">
+<body data-page="news" data-feed-default="business">
   <div id="site-header"></div>
 
-  <section class="hero hero--compact">
+  <section class="hero-home">
     <div class="container">
       <span class="hero-home__tag">News</span>
       <h1>Latest Business News, Startup Updates &amp; Entrepreneur Stories</h1>
     </div>
   </section>
 
-  <main class="page-content">
-    <div class="container container--narrow">
-      <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / News</nav>
-
-      <p>Welcome to the News section of Vivek Bindra News, where readers can explore the latest entrepreneur news, startup ecosystem developments, leadership stories, and business-focused updates from India's growing digital business landscape.</p>
-      <p>Our News section is designed for entrepreneurs, business owners, startup founders, professionals, and readers who want to stay informed about entrepreneurship trends, business leadership, startup growth, and the evolving world of Indian business.</p>
-
-      <section class="section">
-        <h2 class="section__title">Categories We Cover</h2>
-
-        <h3><a href="vivek-bindra-news/">Vivek Bindra News</a></h3>
-        <p>One of the most searched topics in India's business learning ecosystem is Vivek Bindra News. Our coverage focuses on leadership discussions, entrepreneur insights, business learning trends, motivational business content, interviews, seminars, and entrepreneurship-related updates.</p>
-        <p><a href="vivek-bindra-news/">Read the full Vivek Bindra News section →</a></p>
-
-        <h3><a href="entrepreneur-news/">Entrepreneur News</a></h3>
-        <p>We cover entrepreneur stories, founder journeys, startup leaders, business educators, and inspirational entrepreneurship discussions.</p>
-
-        <h3><a href="startup-news/">Startup News</a></h3>
-        <p>India's startup ecosystem is growing rapidly. We publish startup growth stories, founder updates, business innovation news, startup market trends, and entrepreneurship-focused insights.</p>
-
-        <h3><a href="leadership-motivation/">Leadership &amp; Business Growth</a></h3>
-        <p>Leadership has become an important part of entrepreneurship. Our articles discuss communication, team management, business strategy, sales psychology, leadership development, and startup scaling.</p>
-
-        <h3>Business Motivation &amp; Learning</h3>
-        <p>We publish motivational business content, entrepreneur learning articles, and business strategy explainers that help readers understand modern entrepreneurship.</p>
-
-        <div class="category-pills">
-          <a href="vivek-bindra-news/" class="pill pill--featured">Vivek Bindra News</a>
-          <a href="latest-business-news/" class="pill">Latest Business News</a>
-          <a href="entrepreneur-news/" class="pill">Entrepreneur News</a>
-          <a href="startup-news/" class="pill">Startup News</a>
-          <a href="leadership-motivation/" class="pill">Leadership &amp; Business Growth</a>
-          <a href="podcast-interviews/" class="pill">Podcast &amp; Interviews</a>
-          <a href="success-stories/" class="pill">Success Stories</a>
-          <a href="case-studies/" class="pill">Case Studies</a>
+  <div id="site-news-hub" class="blog-hub">
+    <section class="news-front" aria-label="Featured news">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / News</nav>
+        <p class="news-front__label">Top Story</p>
+        <div class="news-front__grid">
+          <article class="news-lead" id="site-news-featured-lead"></article>
+          <div class="news-headlines" id="site-news-featured-headlines"></div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section">
-        <h2 class="section__title">Why Business News Matters</h2>
-        <p>Business journalism plays an important role in helping readers understand changing market trends, startup opportunities, leadership strategies, and entrepreneurship culture.</p>
-        <p>The demand for entrepreneur-focused content has increased significantly because modern readers are actively searching for:</p>
-        <ul>
-          <li>Business growth ideas</li>
-          <li>Startup opportunities</li>
-          <li>Entrepreneur interviews</li>
-          <li>Leadership lessons</li>
-          <li>Marketing insights</li>
-          <li>Founder stories</li>
-          <li>Business communication strategies</li>
-        </ul>
-        <p>Vivek Bindra News aims to become a valuable source of entrepreneur-focused information for India's growing digital business audience.</p>
-      </section>
+    <main class="page-content">
+      <div class="container news-about">
+        <section class="news-intro" aria-label="About our News section">
+          <p class="news-intro__lead">Breaking entrepreneur news, startup updates, and business stories from India's digital business landscape.</p>
+        </section>
 
-      <section class="section">
-        <h2 class="section__title">Our Editorial Focus</h2>
-        <p>We focus on informative, balanced, and professional business journalism.</p>
-        <p>Our goal is to:</p>
-        <ul>
-          <li>Publish fresh entrepreneur content</li>
-          <li>Share startup ecosystem insights</li>
-          <li>Cover leadership discussions</li>
-          <li>Promote business learning</li>
-          <li>Deliver informative reporting</li>
-          <li>Build trust with readers</li>
-        </ul>
-      </section>
+        <section class="section" id="site-news-grid-section">
+          <h2 class="section__title">Latest From Vivek Bindra News</h2>
+          <div id="site-news-grid" class="card-grid card-grid--news"></div>
+        </section>
 
-      <section class="section">
-        <h2 class="section__title">Featured Stories</h2>
-        <div class="featured-strip">
-          <span class="card__category">Vivek Bindra News · 2026</span>
-          <h3><a href="vivek-bindra-news-business-growth-india/">Vivek Bindra News 2026: Business Leadership, Entrepreneurship Growth &amp; Bada Business Vision</a></h3>
-          <p class="mb-0">Business-focused coverage on trending searches, MSME growth, and what entrepreneurs should actually focus on.</p>
-        </div>
-        <div class="featured-strip" style="margin-top:1rem;">
-          <span class="card__category">Vivek Bindra News</span>
-          <h3><a href="vivek-bindra-news-latest-updates/">Vivek Bindra News: Latest Updates Every Entrepreneur Should Know</a></h3>
-          <p class="mb-0">Programs, leadership insights, and India's business coaching ecosystem.</p>
-        </div>
-      </section>
-
-      <section class="section">
-        <h2 class="section__title">Frequently Asked Questions</h2>
-        <div class="faq-list">
-          <div class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">What type of news does Vivek Bindra News publish?</button>
-            <div class="faq-answer">We publish entrepreneur news, startup updates, leadership articles, business explainers, founder stories, and motivational business content.</div>
+        <section class="news-about__section" aria-labelledby="news-categories-title">
+          <h2 class="section__title" id="news-categories-title">Browse by Category</h2>
+          <div class="category-pills category-pills--inline">
+            <a href="vivek-bindra-news/" class="pill pill--featured">Vivek Bindra News</a>
+            <a href="latest-business-news/" class="pill">Latest Business News</a>
+            <a href="entrepreneur-news/" class="pill">Entrepreneur News</a>
+            <a href="startup-news/" class="pill">Startup News</a>
+            <a href="leadership-motivation/" class="pill">Leadership &amp; Business Growth</a>
           </div>
-          <div class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">Does the website cover startup and entrepreneur topics?</button>
-            <div class="faq-answer">Yes. Our platform actively focuses on entrepreneurship, startups, leadership, and business growth discussions.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" type="button" aria-expanded="false">Why is entrepreneur news becoming popular in India?</button>
-            <div class="faq-answer">The growth of startups, online businesses, and digital entrepreneurship has increased public interest in business-focused journalism and founder stories.</div>
-          </div>
+        </section>
+
+        <section class="news-about__section">
+          <h2 class="section__title">Web Stories</h2>
+          <p class="news-feed-intro">Quick reads from our latest blogs, news, and articles.</p>
+          <div id="news-web-stories" class="card-grid card-grid--news"></div>
+        </section>
+      </div>
+    </main>
+
+    <section class="live-news-section" id="live-news-section" aria-label="Live headlines from external sources">
+      <div class="container">
+        <h2 class="section__title" id="live-news-title">Latest Headlines by Topic</h2>
+        <p class="news-feed-intro" id="live-news-intro">Fresh business news from trusted sources.</p>
+        <div class="news-feed">
+          <div id="news-feed-tabs" class="news-feed-tabs" role="tablist" aria-label="News categories"></div>
+          <div id="news-feed-grid" class="card-grid card-grid--news" aria-live="polite"></div>
+          <p id="news-feed-status" class="news-feed-footnote"></p>
         </div>
-      </section>
-    </div>
-  </main>
+      </div>
+    </section>
+  </div>
 
   <div id="site-footer"></div>
   <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent">
@@ -131,6 +85,18 @@
     </div>
   </div>
   <script src="js/components.js"></script>
+  <script src="js/images.js"></script>
+  <script src="js/site-news-config.js"></script>
+  <script src="js/blog-feed-config.js"></script>
+  <script src="js/content-aggregator.js"></script>
+  <script src="js/site-news-feed.js"></script>
+  <script src="js/news-feed-config.js"></script>
+  <script src="js/home-news-feed.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.SiteContent) SiteContent.renderWebStoriesGrid("news-web-stories");
+    });
+  </script>
 </body>
 </html>

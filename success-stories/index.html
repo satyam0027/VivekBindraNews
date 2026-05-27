@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/main.css">
 </head>
-<body data-page="news">
+<body data-page="news" data-feed-default="entrepreneur">
   <div id="site-header"></div>
   <section class="hero hero--compact"><div class="container"><h1>Success Stories</h1><p class="hero__subtitle">Entrepreneur success stories that teach — not just inspire</p></div></section>
   <main class="page-content">
@@ -18,9 +18,22 @@
       <p>We publish <strong>entrepreneur success stories</strong> with an educational lens: what decision mattered, what failed first, and what readers can apply in their own businesses.</p>
       <p>Explore growth narratives tied to <a href="../vivek-bindra-news/">Vivek Bindra News</a> and India's wider coaching ecosystem in our <a href="../vivek-bindra-news-latest-updates/">2026 featured article</a>.</p>
     </div>
+
+    <section class="section" id="live-news-section" aria-label="Live success story and entrepreneur headlines">
+      <div class="container">
+        <h2 class="section__title">Latest Success &amp; Founder Headlines (Live)</h2>
+        <div class="news-feed">
+          <div id="news-feed-tabs" class="news-feed-tabs" role="tablist" aria-label="News categories"></div>
+          <div id="news-feed-grid" class="card-grid card-grid--news" aria-live="polite"></div>
+          <p id="news-feed-status" class="news-feed-footnote"></p>
+        </div>
+      </div>
+    </section>
   </main>
   <div id="site-footer"></div>
   <script src="../js/components.js"></script>
+  <script src="../js/news-feed-config.js"></script>
+  <script src="../js/home-news-feed.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>

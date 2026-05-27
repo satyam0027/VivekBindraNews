@@ -23,13 +23,11 @@
         { href: "/entrepreneur-news/", label: "Entrepreneur News" },
         { href: "/startup-news/", label: "Startup News" },
         { href: "/leadership-motivation/", label: "Leadership & Motivation" },
-        { href: "/podcast-interviews/", label: "Podcast & Interviews" },
-        { href: "/success-stories/", label: "Success Stories" },
-        { href: "/case-studies/", label: "Case Studies" },
       ],
     },
     { href: "/about-us.html", label: "About Us", id: "about" },
     { href: "/blog.html", label: "Blog", id: "blog" },
+    { href: "/articles.html", label: "Articles", id: "articles" },
     { href: "/contact-us.html", label: "Contact Us", id: "contact" },
   ];
 
@@ -43,6 +41,7 @@
     company: [
       { href: "/about-us.html", label: "About Us" },
       { href: "/blog.html", label: "Blog" },
+      { href: "/articles.html", label: "Articles" },
       { href: "/contact-us.html", label: "Contact Us" },
     ],
     legal: [
@@ -76,10 +75,9 @@
 
   function renderBreakingBar() {
     const segment = `
-          <span class="tag-gold">[ANALYSIS]</span> Indian startup ecosystem sees record SME digitization in Q1 2026 &nbsp;&nbsp;|&nbsp;&nbsp;
-          <span class="tag-gold">[VIVEK BINDRA NEWS]</span> Latest entrepreneur training programs expand to 40+ cities &nbsp;&nbsp;|&nbsp;&nbsp;
-          <span class="tag-gold">[STARTUP]</span> Founder-led brands outperform in tier-2 market growth &nbsp;&nbsp;|&nbsp;&nbsp;
-          <span class="tag-gold">[LEADERSHIP]</span> Business coaching demand rises among first-time entrepreneurs
+          <span class="tag-gold">[BREAKING]</span> Vivek Oberoi joins Dr Vivek Bindra at Gujarat's biggest Branded Factory launch in Vadodara &nbsp;&nbsp;|&nbsp;&nbsp;
+          <span class="tag-gold">[BLOG]</span> Vivek Bindra News: Latest Updates Every Entrepreneur Should Know &nbsp;&nbsp;|&nbsp;&nbsp;
+          <span class="tag-gold">[NEWS]</span> Latest business news from Vivek Bindra News
         `;
     return `
     <div class="breaking-bar" role="region" aria-label="Breaking news">

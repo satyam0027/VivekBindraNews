@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
+  if (window.BBN_IMAGES && typeof window.BBN_IMAGES.init === "function") {
+    window.BBN_IMAGES.init();
+  }
+
   const slides = document.querySelectorAll(".web-story__slide");
   const dots = document.querySelectorAll(".web-story__dot");
   const prev = document.querySelector(".web-story__prev");

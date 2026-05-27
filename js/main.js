@@ -10,6 +10,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   const activePage = document.body.dataset.page || "";
   if (window.BBN) BBN.injectLayout(activePage);
+  if (window.BBN_IMAGES && typeof window.BBN_IMAGES.init === "function") {
+    window.BBN_IMAGES.init();
+  }
+  if (window.HomeNewsFeed && typeof window.HomeNewsFeed.init === "function") {
+    window.HomeNewsFeed.init();
+  }
 
   initMobileNav();
   initFaq();
@@ -32,9 +38,10 @@ function initMobileNav() {
 }
 
 function initNavDropdownMobile() {
+  var mobileNavMq = window.matchMedia("(max-width: 1024px)");
   document.querySelectorAll(".nav-dropdown > a").forEach(function (link) {
     link.addEventListener("click", function (e) {
-      if (window.innerWidth > 768) return;
+      if (!mobileNavMq.matches) return;
       const parent = link.parentElement;
       if (parent.querySelector(".nav-dropdown__menu")) {
         e.preventDefault();

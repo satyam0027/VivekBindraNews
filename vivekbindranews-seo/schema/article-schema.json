@@ -1,0 +1,40 @@
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "REPLACE: Full article title here (max 110 characters)",
+  "description": "REPLACE: Article meta description (145-160 characters)",
+  "image": [
+    "REPLACE: https://www.vivekbindranews.com/wp-content/uploads/ARTICLE-IMAGE.jpg"
+  ],
+  "datePublished": "REPLACE: 2026-05-26T10:00:00+05:30",
+  "dateModified": "REPLACE: 2026-05-26T10:00:00+05:30",
+  "author": {
+    "@type": "Person",
+    "name": "REPLACE: Author Full Name",
+    "url": "REPLACE: https://www.vivekbindranews.com/author/author-username/",
+    "jobTitle": "REPLACE: Business Reporter",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Vivek Bindra News"
+    }
+  },
+  "publisher": {
+    "@type": "NewsMediaOrganization",
+    "name": "Vivek Bindra News",
+    "url": "https://www.vivekbindranews.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.vivekbindranews.com/wp-content/uploads/logo.png",
+      "width": 400,
+      "height": 100
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "REPLACE: https://www.vivekbindranews.com/article-url-slug/"
+  },
+  "articleSection": "REPLACE: Vivek Bindra News",
+  "keywords": "REPLACE: vivek bindra, bada business, entrepreneur news india",
+  "inLanguage": "en-IN",
+  "isAccessibleForFree": true
+}

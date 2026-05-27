@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  GOOGLE NEWS SITEMAP — vivekbindranews.com
+  ==========================================
+  RULES:
+  - Only include articles published in the LAST 2 DAYS
+  - Update within 1 hour of publishing a new article
+  - Maximum 1,000 URLs per sitemap file
+  - Submit URL to Google Search Console: https://search.google.com/search-console
+  - Sitemap URL: https://www.vivekbindranews.com/news-sitemap.xml
+  
+  HOW TO USE:
+  If you have Rank Math or Yoast SEO plugin, they auto-generate this.
+  Submit https://www.vivekbindranews.com/news-sitemap.xml in Search Console.
+  
+  If manual: replace the example entries below, upload to root of site.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- ARTICLE 1: Replace with your actual article details -->
+  <url>
+    <loc>https://www.vivekbindranews.com/vivek-bindra-branded-factory-vadodara-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Vivek Bindra News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-26T10:00:00+05:30</news:publication_date>
+      <news:title>Vivek Bindra Inaugurates Branded Factory Mega Outlet in Vadodara — May 2026</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.vivekbindranews.com/wp-content/uploads/branded-factory-vadodara.jpg</image:loc>
+      <image:title>Vivek Bindra at Branded Factory launch in Vadodara 2026</image:title>
+    </image:image>
+  </url>
+
+  <!-- ARTICLE 2: Replace with your actual article details -->
+  <url>
+    <loc>https://www.vivekbindranews.com/bada-business-supreme-court-clean-chit/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Vivek Bindra News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-27T09:00:00+05:30</news:publication_date>
+      <news:title>Supreme Court Dismisses All Cases Against Vivek Bindra and Bada Business</news:title>
+    </news:news>
+  </url>
+
+  <!-- ADD MORE ARTICLES HERE following the same format -->
+  <!-- REMOVE articles older than 2 days from this sitemap -->
+
+</urlset>

@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@type": "NewsMediaOrganization",
+  "name": "Vivek Bindra News",
+  "alternateName": ["VivekBindraNews", "Vivek Bindra News India"],
+  "url": "https://www.vivekbindranews.com",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://www.vivekbindranews.com/wp-content/uploads/logo.png",
+    "width": 400,
+    "height": 100
+  },
+  "sameAs": [
+    "https://twitter.com/vivekbindranews",
+    "https://www.linkedin.com/company/vivekbindranews",
+    "https://www.facebook.com/vivekbindranews"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "contact@vivekbindranews.com",
+    "contactType": "editorial",
+    "availableLanguage": "English"
+  },
+  "foundingDate": "2026",
+  "description": "India's growing digital business news platform focused on entrepreneurship, startup culture, and leadership development covering Vivek Bindra, Bada Business, and India's startup ecosystem.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "New Delhi",
+    "addressRegion": "Delhi",
+    "addressCountry": "IN"
+  },
+  "publishingPrinciples": "https://www.vivekbindranews.com/about/",
+  "masthead": "https://www.vivekbindranews.com/about/",
+  "ethicsPolicy": "https://www.vivekbindranews.com/about/"
+}

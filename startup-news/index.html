@@ -4,27 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Startup News India | Funding, Growth &amp; Ecosystem Updates</title>
-  <meta name="description" content="Startup news India — funding rounds, founder updates, business model trends, and ecosystem insights for entrepreneurs on BadaBusinessNews.">
+  <meta name="description" content="Startup news India — funding rounds, founder updates, business model trends, and ecosystem insights for entrepreneurs on Vivek Bindra News.">
   <link rel="canonical" href="https://vivekbindranews.com/startup-news/">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/bbc-news.css">
 </head>
-<body data-page="news">
+<body data-page="news" data-news-subpage="startup-news" data-feed-default="startup">
   <div id="site-header"></div>
-  <section class="hero hero--compact"><div class="container"><h1>Startup News India</h1><p class="hero__subtitle">Funding, launches, failures &amp; lessons from India's startup ecosystem</p></div></section>
-  <main class="page-content">
-    <div class="container container--narrow">
-      <nav class="breadcrumb"><a href="../">Home</a> / <a href="../news.html">News</a> / Startup News</nav>
-      <p>India's startup scene moves fast. We track funding, market shifts, new launches, and business model changes — with enough context that you understand what it means for your venture.</p>
-      <p>Looking for founder education alongside ecosystem news? Explore <a href="../vivek-bindra-news/">Vivek Bindra News</a> and our guide to <a href="../vivek-bindra-news-latest-updates/">vivek bindra startup advice</a> themes in 2026.</p>
-      <div class="category-pills">
-        <a href="../case-studies/" class="pill">Case Studies</a>
-        <a href="../entrepreneur-news/" class="pill">Entrepreneur News</a>
-      </div>
+
+  <section class="hero-home">
+    <div class="container">
+      <span class="hero-home__tag">Startup News</span>
+      <h1>Startup News India</h1>
+      <p class="hero-home__subtitle">Funding, launches, failures &amp; lessons from India's startup ecosystem</p>
     </div>
-  </main>
+  </section>
+
+  <div id="news-subpage-hub" class="blog-hub">
+    <section class="news-front" aria-label="Featured startup news">
+      <div class="container">
+        <nav class="breadcrumb"><a href="../">Home</a> / <a href="../news.html">News</a> / Startup News</nav>
+        <p class="news-front__label">Top Stories</p>
+        <div class="news-front__grid">
+          <article class="news-lead" id="news-subpage-lead"></article>
+          <div class="news-headlines" id="news-subpage-headlines"></div>
+        </div>
+      </div>
+    </section>
+
+    <main class="page-content">
+      <div class="container news-about">
+        <section class="news-intro">
+          <p class="news-intro__lead">India's startup scene — funding, launches, and ecosystem updates for founders.</p>
+        </section>
+
+        <section class="news-about__section" id="news-subpage-grid-section">
+          <h2 class="section__title">All Startup Stories</h2>
+          <div id="news-subpage-grid" class="card-grid card-grid--news"></div>
+        </section>
+
+        <p class="text-center"><a href="../news.html" class="btn btn--outline">← Back to News hub</a></p>
+      </div>
+    </main>
+
+    <section class="live-news-section" id="live-news-section" aria-label="Live headlines from external sources">
+      <div class="container">
+        <h2 class="section__title" id="live-news-title">Live Headlines</h2>
+        <p class="news-feed-intro" id="live-news-intro">Latest news from trusted external sources.</p>
+        <div class="news-feed">
+          <div id="news-feed-tabs" class="news-feed-tabs" role="tablist" aria-label="News categories" hidden></div>
+          <div id="news-feed-grid" class="card-grid card-grid--news" aria-live="polite"></div>
+          <p id="news-feed-status" class="news-feed-footnote"></p>
+        </div>
+      </div>
+    </section>
+  </div>
+
   <div id="site-footer"></div>
   <script src="../js/components.js"></script>
+  <script src="../js/images.js"></script>
+  <script src="../js/news-subpage-config.js"></script>
+  <script src="../js/news-subpage-feed.js"></script>
+  <script src="../js/news-feed-config.js"></script>
+  <script src="../js/home-news-feed.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>

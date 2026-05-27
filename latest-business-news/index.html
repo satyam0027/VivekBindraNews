@@ -3,31 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Latest Business News India | Bada Business News</title>
-  <meta name="description" content="Latest business news from India — market trends, corporate updates, SME developments, and entrepreneur-focused reporting on BadaBusinessNews.">
+  <title>Latest Business News India | Vivek Bindra News</title>
+  <meta name="description" content="Latest business news from India — market trends, corporate updates, SME developments, and entrepreneur-focused reporting on Vivek Bindra News.">
   <link rel="canonical" href="https://vivekbindranews.com/latest-business-news/">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/bbc-news.css">
 </head>
-<body data-page="news">
+<body data-page="news" data-news-subpage="latest-business-news" data-feed-default="business">
   <div id="site-header"></div>
-  <section class="hero hero--compact"><div class="container"><h1>Latest Business News</h1><p class="hero__subtitle">India's business trends, market updates &amp; entrepreneur-focused reporting</p></div></section>
-  <main class="page-content">
-    <div class="container container--narrow">
-      <nav class="breadcrumb"><a href="../">Home</a> / <a href="../news.html">News</a> / Latest Business News</nav>
-      <p>Stay informed with the <strong>latest business news</strong> from India's evolving economy — covering SME growth, digital business trends, policy impacts, and stories that matter to founders and operators.</p>
-      <p>Our <strong>Indian entrepreneur news</strong> approach prioritizes context: we explain what changed, who it affects, and what entrepreneurs can learn from it.</p>
-      <h2>Featured Coverage</h2>
-      <p>Read our flagship update: <a href="../vivek-bindra-news-latest-updates/">Vivek Bindra News: Latest Updates Every Entrepreneur Should Know</a></p>
-      <div class="category-pills">
-        <a href="../vivek-bindra-news/" class="pill">Vivek Bindra News</a>
-        <a href="../startup-news/" class="pill">Startup News</a>
-        <a href="../entrepreneur-news/" class="pill">Entrepreneur News</a>
-      </div>
+
+  <section class="hero-home">
+    <div class="container">
+      <span class="hero-home__tag">Business News</span>
+      <h1>Latest Business News</h1>
+      <p class="hero-home__subtitle">India's business trends, market updates &amp; entrepreneur-focused reporting</p>
     </div>
-  </main>
+  </section>
+
+  <div id="news-subpage-hub" class="blog-hub">
+    <section class="news-front" aria-label="Featured business news">
+      <div class="container">
+        <nav class="breadcrumb"><a href="../">Home</a> / <a href="../news.html">News</a> / Latest Business News</nav>
+        <p class="news-front__label">Top Stories</p>
+        <div class="news-front__grid">
+          <article class="news-lead" id="news-subpage-lead"></article>
+          <div class="news-headlines" id="news-subpage-headlines"></div>
+        </div>
+      </div>
+    </section>
+
+    <main class="page-content">
+      <div class="container news-about">
+        <section class="news-intro">
+          <p class="news-intro__lead">Latest business news from India's evolving economy — SME growth, market trends, and entrepreneur-focused reporting.</p>
+        </section>
+
+        <section class="news-about__section" id="news-subpage-grid-section">
+          <h2 class="section__title">All Business Stories</h2>
+          <div id="news-subpage-grid" class="card-grid card-grid--news"></div>
+        </section>
+
+        <p class="text-center"><a href="../news.html" class="btn btn--outline">← Back to News hub</a></p>
+      </div>
+    </main>
+
+    <section class="live-news-section" id="live-news-section" aria-label="Live headlines from external sources">
+      <div class="container">
+        <h2 class="section__title" id="live-news-title">Live Headlines</h2>
+        <p class="news-feed-intro" id="live-news-intro">Latest news from trusted external sources.</p>
+        <div class="news-feed">
+          <div id="news-feed-tabs" class="news-feed-tabs" role="tablist" aria-label="News categories" hidden></div>
+          <div id="news-feed-grid" class="card-grid card-grid--news" aria-live="polite"></div>
+          <p id="news-feed-status" class="news-feed-footnote"></p>
+        </div>
+      </div>
+    </section>
+  </div>
+
   <div id="site-footer"></div>
   <script src="../js/components.js"></script>
+  <script src="../js/images.js"></script>
+  <script src="../js/news-subpage-config.js"></script>
+  <script src="../js/news-subpage-feed.js"></script>
+  <script src="../js/news-feed-config.js"></script>
+  <script src="../js/home-news-feed.js"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>
