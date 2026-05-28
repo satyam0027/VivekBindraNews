@@ -86,41 +86,6 @@
     return d.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" });
   }
 
-  let _bbnConfigLoadPromise = null;
-  function loadScriptOnce(url) {
-    return new Promise(function (resolve) {
-      const existing = document.querySelector('script[data-bbn-src="' + url + '"]');
-      if (existing) {
-        if (existing.getAttribute("data-bbn-loaded") === "1") return resolve(true);
-        existing.addEventListener("load", function () { resolve(true); }, { once: true });
-        existing.addEventListener("error", function () { resolve(false); }, { once: true });
-        return;
-      }
-      const s = document.createElement("script");
-      s.src = url;
-      s.async = true;
-      s.setAttribute("data-bbn-src", url);
-      s.addEventListener("load", function () {
-        s.setAttribute("data-bbn-loaded", "1");
-        resolve(true);
-      }, { once: true });
-      s.addEventListener("error", function () { resolve(false); }, { once: true });
-      document.head.appendChild(s);
-    });
-  }
-
-  function ensureContentConfigsLoaded() {
-    if (global.SITE_NEWS_CONFIG && global.BLOG_FEED_CONFIG) return Promise.resolve(true);
-    if (_bbnConfigLoadPromise) return _bbnConfigLoadPromise;
-    _bbnConfigLoadPromise = Promise.all([
-      loadScriptOnce(resolveHref("/js/site-news-config.js")),
-      loadScriptOnce(resolveHref("/js/blog-feed-config.js")),
-    ]).then(function () {
-      return !!(global.SITE_NEWS_CONFIG && global.BLOG_FEED_CONFIG);
-    });
-    return _bbnConfigLoadPromise;
-  }
-
   function getLatestContentItems(limit) {
     const items = [];
 
@@ -190,7 +155,7 @@
     const segment = buildBreakingSegmentHtml(getLatestContentItems(6));
     return `
     <div class="breaking-bar" role="region" aria-label="Breaking news">
-      <span class="breaking-bar__label">Breaking</span>
+      <span class="breaking-bar__label">Latest</span>
       <div class="breaking-bar__ticker">
         <div class="breaking-bar__track" aria-live="off">
           <span class="breaking-bar__segment">${segment}</span>
@@ -204,15 +169,13 @@
     const bar = document.querySelector(".breaking-bar");
     const track = bar && bar.querySelector(".breaking-bar__track");
     if (!bar || !track) return;
-    ensureContentConfigsLoaded().finally(function () {
-      const segment = buildBreakingSegmentHtml(getLatestContentItems(6));
-      track.innerHTML =
-        '<span class="breaking-bar__segment">' +
-        segment +
-        '</span><span class="breaking-bar__segment" aria-hidden="true">' +
-        segment +
-        "</span>";
-    });
+    const segment = buildBreakingSegmentHtml(getLatestContentItems(6));
+    track.innerHTML =
+      '<span class="breaking-bar__segment">' +
+      segment +
+      '</span><span class="breaking-bar__segment" aria-hidden="true">' +
+      segment +
+      "</span>";
   }
 
   function renderHeader(activeId) {

@@ -16,6 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
   if (window.HomeNewsFeed && typeof window.HomeNewsFeed.init === "function") {
     window.HomeNewsFeed.init();
   }
+  if (window.BBN && typeof window.BBN.updateBreakingBar === "function") {
+    window.BBN.updateBreakingBar();
+  }
 
   initMobileNav();
   initFaq();

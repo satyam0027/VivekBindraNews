@@ -236,7 +236,7 @@ li { margin-bottom: 0.35rem; }
 .breaking-bar__track {
   display: flex;
   width: max-content;
-  animation: breaking-marquee 30s linear infinite;
+  animation: breaking-marquee 42s linear infinite;
   will-change: transform;
 }
 
@@ -2422,7 +2422,7 @@ a.home-topic-chip:hover {
   }
 
   .breaking-bar__track {
-    animation-duration: 28s;
+    animation-duration: 32s;
   }
 
   .breaking-bar__segment {
@@ -2500,7 +2500,7 @@ a.home-topic-chip:hover {
   }
 
   .breaking-bar__track {
-    animation-duration: 24s;
+    animation-duration: 28s;
   }
 }
 

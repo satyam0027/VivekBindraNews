@@ -10,7 +10,7 @@ window.BLOG_FEED_CONFIG = {
 
   blogs: [
     {
-      slug: "vivek-bindra-news-2026/",
+      slug: "blog/vivek-bindra-news-2026/",
       title: "Vivek Bindra News: Latest Updates Every Entrepreneur Should Know",
       excerpt: "Get the latest Vivek Bindra News 2026 including CGP 2.0, Idea to IPO, Bada Business updates, AI business coach, and entrepreneur insights.",
       category: "entrepreneurship",
@@ -21,7 +21,7 @@ window.BLOG_FEED_CONFIG = {
       featured: true,
     },
     {
-      slug: "vivek-bindra-news-business-growth-india/",
+      slug: "blog/vivek-bindra-news-business-growth-india/",
       title: "Vivek Bindra News 2026: Business Leadership, Entrepreneurship Growth & Bada Business Vision in India",
       excerpt: "Read the latest Vivek Bindra news, business updates, entrepreneurship insights, and Bada Business growth story. Leadership, startup trends, and MSME learning in India.",
       category: "entrepreneurship",

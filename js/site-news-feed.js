@@ -80,7 +80,7 @@
         '<article class="news-headline news-headline--solo">' +
           '<div>' +
             '<span class="news-kicker">Blog</span>' +
-            '<h3 class="news-headline__title"><a href="vivek-bindra-news-2026/">Latest Updates Every Entrepreneur Should Know</a></h3>' +
+            '<h3 class="news-headline__title"><a href="blog/vivek-bindra-news-2026/">Latest Updates Every Entrepreneur Should Know</a></h3>' +
             '<p class="news-headline__meta">Vivek Bindra News 2026 roundup</p>' +
           '</div>' +
         '</article>' +
