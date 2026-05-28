@@ -90,6 +90,12 @@
       height: 675,
       alt: "Vivek Bindra contribution to MSMEs entrepreneurs and startup business growth",
     },
+    lokhandeIndustriesGrowth: {
+      file: "lokhande-industries-growth-bada-business-vivek-bindra-2026.png",
+      width: 1200,
+      height: 900,
+      alt: "Lokhande Industries achieves massive business growth with Bada Business and Dr Vivek Bindra (2026)",
+    },
   };
 
   function basePath() {
