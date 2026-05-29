@@ -158,7 +158,8 @@
 
   function renderWebStories() {
     if (window.SiteContent && typeof window.SiteContent.renderWebStoriesGrid === "function") {
-      window.SiteContent.renderWebStoriesGrid("blog-web-stories");
+      const filter = isArticles ? { onlyArticles: true } : null;
+      window.SiteContent.renderWebStoriesGrid("blog-web-stories", filter);
     }
   }
 

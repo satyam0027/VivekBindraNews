@@ -5,13 +5,22 @@ window.NEWS_SUBPAGE_CONFIG = {
   "vivek-bindra-news": {
     stories: [
       {
+        slug: "../news/vivek-bindra-news-spl-trophy-launch-2026/",
+        title: "Vivek Bindra News: Dr Vivek Bindra and Devkinandan Thakur Ji Maharaj Launch Sanatan Premier League Trophy",
+        excerpt: "Official SPL trophy unveiling in New Delhi — Dr Vivek Bindra and Devkinandan Thakur Ji Maharaj share an inspiring message for India's youth.",
+        badge: "Latest",
+        date: "2026-05-29",
+        image: "vivekBindraSplTrophy",
+        featured: true,
+      },
+      {
         slug: "../news/dr-vivek-bindra-latest-news-lokhande-industries-growth-2026/",
         title: "Dr Vivek Bindra Latest News 2026: Lokhande Industries Achieves Massive Business Growth with Bada Business",
         excerpt: "Lokhande Industries reports exceptional production and profitability growth after collaboration with Dr Vivek Bindra and Bada Business.",
-        badge: "Latest",
+        badge: "Breaking",
         date: "2026-05-28",
         image: "lokhandeIndustriesGrowth",
-        featured: true,
+        featured: false,
       },
       {
         slug: "../news/vivek-bindra-news-vivek-oberoi-vadodara-retail-launch/",
@@ -30,13 +39,22 @@ window.NEWS_SUBPAGE_CONFIG = {
   "latest-business-news": {
     stories: [
       {
+        slug: "../news/vivek-bindra-news-spl-trophy-launch-2026/",
+        title: "Vivek Bindra News: Dr Vivek Bindra and Devkinandan Thakur Ji Maharaj Launch Sanatan Premier League Trophy",
+        excerpt: "SPL trophy unveiled at Constitution Club of India — sports, leadership, and values for youth across India.",
+        badge: "Latest",
+        date: "2026-05-29",
+        image: "vivekBindraSplTrophy",
+        featured: true,
+      },
+      {
         slug: "../news/dr-vivek-bindra-latest-news-lokhande-industries-growth-2026/",
         title: "Dr Vivek Bindra Latest News 2026: Lokhande Industries Achieves Massive Business Growth with Bada Business",
         excerpt: "Manufacturing success story — KPI-driven systems, productivity lift, and profitability growth at Lokhande Industries.",
-        badge: "Latest",
+        badge: "Breaking",
         date: "2026-05-28",
         image: "lokhandeIndustriesGrowth",
-        featured: true,
+        featured: false,
       },
       {
         slug: "../news/vivek-bindra-news-vivek-oberoi-vadodara-retail-launch/",

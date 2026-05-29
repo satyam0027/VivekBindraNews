@@ -96,6 +96,48 @@
       height: 900,
       alt: "Lokhande Industries achieves massive business growth with Bada Business and Dr Vivek Bindra (2026)",
     },
+    vivekBindraSplTrophy: {
+      file: "vivek-bindra-spl-trophy.webp",
+      width: 1200,
+      height: 800,
+      alt: "Dr Vivek Bindra and Devkinandan Thakur Ji Maharaj at SPL Trophy Launch Event",
+    },
+    vbTrendingAgain2026: {
+      file: "vivek-bindra-news-2026-trending-again.jpg",
+      width: 1200,
+      height: 675,
+      alt: "Vivek Bindra News 2026",
+    },
+    badaBusinessMsmeMovement: {
+      file: "bada-business-msme-entrepreneurship-movement.jpg",
+      width: 1200,
+      height: 675,
+      alt: "Bada Business entrepreneurship platform supporting MSMEs",
+    },
+    vbFutureVision2026: {
+      file: "dr-vivek-bindra-future-business-vision-2026.jpg",
+      width: 1200,
+      height: 675,
+      alt: "Dr Vivek Bindra future plans for Bada Business",
+    },
+    consultantVsCoachHero: {
+      file: "business-growth-consultant-vs-business-coach-difference.webp",
+      width: 1200,
+      height: 675,
+      alt: "Business growth consultant vs business coach explained with growth and leadership focus",
+    },
+    signsNeedGrowthConsultant: {
+      file: "signs-you-need-business-growth-consultant.webp",
+      width: 1200,
+      height: 675,
+      alt: "Signs you need a business growth consultant for strategy, scaling, and profit improvement",
+    },
+    signsNeedBusinessCoach: {
+      file: "signs-you-need-business-coach-for-growth.webp",
+      width: 1200,
+      height: 675,
+      alt: "Signs you need a business coach for leadership, accountability, and business growth",
+    },
   };
 
   function basePath() {

@@ -65,9 +65,9 @@
           </div>
         </section>
 
-        <section class="news-about__section">
+        <section class="news-about__section" data-web-stories-section hidden>
           <h2 class="section__title">Web Stories</h2>
-          <p class="news-feed-intro">Quick reads from our latest blogs, news, and articles.</p>
+          <p class="news-feed-intro">Web stories appear here when linked to a news article.</p>
           <div id="news-web-stories" class="card-grid card-grid--news"></div>
         </section>
       </div>
@@ -97,6 +97,7 @@
   <script src="js/images.js"></script>
   <script src="js/site-news-config.js"></script>
   <script src="js/blog-feed-config.js"></script>
+  <script src="js/web-stories-config.js"></script>
   <script src="js/content-aggregator.js"></script>
   <script src="js/site-news-feed.js"></script>
   <script src="js/news-feed-config.js"></script>
@@ -104,7 +105,7 @@
   <script src="js/main.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      if (window.SiteContent) SiteContent.renderWebStoriesGrid("news-web-stories");
+      if (window.SiteContent) SiteContent.renderWebStoriesGrid("news-web-stories", { onlyNews: true });
     });
   </script>
 </body>

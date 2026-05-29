@@ -4,6 +4,22 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
+    <loc>https://www.vivekbindranews.com/news/vivek-bindra-news-spl-trophy-launch-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Vivek Bindra News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-29T10:00:00+05:30</news:publication_date>
+      <news:title>Vivek Bindra News: Dr Vivek Bindra and Devkinandan Thakur Ji Maharaj Launch Sanatan Premier League Trophy</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.vivekbindranews.com/images/vivek-bindra-spl-trophy.webp</image:loc>
+      <image:title>Dr Vivek Bindra and Devkinandan Thakur Ji Maharaj at SPL Trophy Launch Event</image:title>
+    </image:image>
+  </url>
+
+  <url>
     <loc>https://www.vivekbindranews.com/vivek-bindra-news-vivek-oberoi-vadodara-retail-launch/</loc>
     <news:news>
       <news:publication>

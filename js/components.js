@@ -306,11 +306,36 @@
     if (footerEl) footerEl.innerHTML = renderFooter();
   }
 
+  function injectFavicons() {
+    if (document.querySelector("link[data-bbn-favicon]")) return;
+
+    const base = basePath();
+    const defs = [
+      { rel: "icon", type: "image/png", sizes: "32x32", href: base + "images/favicon-32x32.png" },
+      { rel: "icon", type: "image/png", sizes: "192x192", href: base + "images/favicon-192.png" },
+      { rel: "icon", href: base + "favicon.ico", sizes: "any" },
+      { rel: "apple-touch-icon", sizes: "180x180", href: base + "images/apple-touch-icon.png" },
+    ];
+
+    defs.forEach(function (cfg) {
+      const link = document.createElement("link");
+      link.rel = cfg.rel;
+      link.href = cfg.href;
+      link.setAttribute("data-bbn-favicon", "1");
+      if (cfg.type) link.type = cfg.type;
+      if (cfg.sizes) link.sizes = cfg.sizes;
+      document.head.appendChild(link);
+    });
+  }
+
   global.BBN = {
     SITE,
     injectLayout,
+    injectFavicons,
     resolveHref,
     basePath,
     updateBreakingBar,
   };
+
+  if (document.head) injectFavicons();
 })(window);

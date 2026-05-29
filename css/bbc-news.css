@@ -323,6 +323,73 @@
   color: var(--bbc-red);
 }
 
+/* Article comparison tables */
+.article-table-wrap {
+  overflow-x: auto;
+  margin: 1.5rem 0 2rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.article-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  min-width: 520px;
+}
+
+.article-table th,
+.article-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--bbc-rule);
+}
+
+.article-table thead th {
+  background: var(--color-bg-soft);
+  font-weight: 700;
+  color: var(--color-heading);
+}
+
+.article-table tbody tr:last-child th,
+.article-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.article-table tbody th {
+  font-weight: 600;
+  width: 28%;
+  color: var(--color-heading);
+}
+
+/* Web story preview cards — full cover graphic, no crop */
+.card.news-card--web-story .card__media--web-story,
+.card.news-card--web-story .card__image-link {
+  display: block;
+}
+
+.card.news-card--web-story .card__media--web-story {
+  aspect-ratio: auto;
+  height: auto;
+  min-height: 0;
+  overflow: hidden;
+  background: #f0f4f8;
+  border-bottom: 1px solid var(--bbc-rule);
+}
+
+.card.news-card--web-story .card__media--web-story .media-img {
+  position: static;
+  width: 100% !important;
+  height: auto !important;
+  max-height: none;
+  object-fit: contain;
+  object-position: center center;
+  vertical-align: top;
+}
+
 /* Hero */
 .hero-home {
   padding: 1.25rem 0 0;
@@ -349,6 +416,41 @@
 
 .trending-item__tag {
   color: var(--bbc-red);
+}
+
+/* Web story cover — full graphic on slide 1 */
+.web-story__slide--cover {
+  padding: 0;
+  justify-content: flex-end;
+}
+
+.web-story__cover-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: #0a2d52;
+}
+
+.web-story__cover-image .media-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.web-story__cover-tagline {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 1.25rem 1.75rem 5rem;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(180deg, transparent 0%, rgba(5, 29, 59, 0.92) 45%);
 }
 
 /* Web story backgrounds */

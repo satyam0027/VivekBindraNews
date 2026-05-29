@@ -1,5 +1,5 @@
 /**
- * Aggregates blogs, news, and articles for web stories & cross-links.
+ * Site content helpers — web stories grids and cross-content utilities.
  */
 window.SiteContent = (function () {
   function escapeHtml(str) {
@@ -15,78 +15,101 @@ window.SiteContent = (function () {
     return d.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" });
   }
 
-  function normalize(item, type) {
-    return {
-      slug: item.slug,
-      title: item.title,
-      excerpt: item.excerpt,
-      date: item.date,
-      image: item.image,
-      badge: item.badge || type,
-      categoryLabel: item.categoryLabel || type,
-      contentType: type,
-      featured: !!item.featured,
-    };
+  function allWebStories() {
+    return (window.WEB_STORIES_CONFIG && window.WEB_STORIES_CONFIG.stories) || [];
   }
 
-  function allItems() {
-    const news = (window.SITE_NEWS_CONFIG && window.SITE_NEWS_CONFIG.stories) || [];
-    const blogs = (window.BLOG_FEED_CONFIG && window.BLOG_FEED_CONFIG.blogs) || [];
-    const articles = (window.BLOG_FEED_CONFIG && window.BLOG_FEED_CONFIG.articles) || [];
+  function filterWebStories(options) {
+    const stories = allWebStories();
+    if (!options) return stories;
 
-    return news
-      .map(function (s) { return normalize(s, "News"); })
-      .concat(blogs.map(function (s) { return normalize(s, "Blog"); }))
-      .concat(articles.map(function (s) { return normalize(s, "Article"); }))
-      .sort(function (a, b) {
-        return new Date(b.date) - new Date(a.date);
+    if (options.relatedBlog) {
+      return stories.filter(function (s) {
+        return s.relatedBlog === options.relatedBlog;
       });
+    }
+    if (options.relatedNews) {
+      return stories.filter(function (s) {
+        return s.relatedNews === options.relatedNews;
+      });
+    }
+    if (options.relatedArticle) {
+      return stories.filter(function (s) {
+        return s.relatedArticle === options.relatedArticle;
+      });
+    }
+    if (options.onlyNews) {
+      return stories.filter(function (s) {
+        return !!s.relatedNews;
+      });
+    }
+    if (options.onlyArticles) {
+      return stories.filter(function (s) {
+        return !!s.relatedArticle;
+      });
+    }
+    return stories;
   }
 
-  function newsItems() {
-    return allItems().filter(function (i) { return i.contentType === "News"; });
+  function storyHref(slug) {
+    if (!slug) return "/";
+    if (slug.charAt(0) === "/" || /^https?:\/\//i.test(slug)) return slug;
+    return "/" + slug.replace(/^\//, "");
   }
 
-  function renderCard(item) {
-    const linkLabel = item.contentType === "News" ? "Read story" : item.contentType === "Blog" ? "Read blog" : "Read article";
+  function renderWebStoryCard(story) {
+    const href = storyHref(story.slug);
     return (
-      '<article class="card news-card">' +
-        '<a href="' + escapeHtml(item.slug) + '" class="card__image-link">' +
-          '<div class="media-frame card__media" data-img="' + escapeHtml(item.image) + '" data-img-fit="contain"></div>' +
+      '<article class="card news-card news-card--web-story">' +
+        '<a href="' + escapeHtml(href) + '" class="card__image-link">' +
+          '<div class="media-frame card__media card__media--web-story" data-img="' + escapeHtml(story.image) + '" data-img-fit="contain"></div>' +
         '</a>' +
         '<div class="card__body">' +
-          '<span class="intent-badge">' + escapeHtml(item.contentType) + '</span>' +
-          '<span class="card__category">' + escapeHtml(formatDate(item.date)) + '</span>' +
-          '<h3 class="card__title"><a href="' + escapeHtml(item.slug) + '">' + escapeHtml(item.title) + '</a></h3>' +
-          '<p class="card__excerpt">' + escapeHtml(item.excerpt) + '</p>' +
-          '<p class="card__meta"><a href="' + escapeHtml(item.slug) + '">' + linkLabel + '</a></p>' +
+          '<span class="intent-badge">Web Story</span>' +
+          '<span class="card__category">' + escapeHtml(formatDate(story.date)) + '</span>' +
+          '<h3 class="card__title"><a href="' + escapeHtml(href) + '">' + escapeHtml(story.title) + '</a></h3>' +
+          '<p class="card__excerpt">' + escapeHtml(story.excerpt) + '</p>' +
+          '<p class="card__meta"><a href="' + escapeHtml(href) + '">View web story</a></p>' +
         '</div>' +
       '</article>'
     );
   }
 
-  function renderWebStoriesGrid(containerId) {
+  function toggleWebStoriesSection(gridEl, hasItems) {
+    if (!gridEl) return;
+    const section =
+      gridEl.closest("[data-web-stories-section]") ||
+      gridEl.closest(".blog-related-web-stories") ||
+      gridEl.closest(".news-about__section");
+    if (section) {
+      section.hidden = !hasItems;
+    }
+  }
+
+  function renderWebStoriesGrid(containerId, filterOptions) {
     const gridEl = document.getElementById(containerId);
     if (!gridEl) return;
 
-    const items = allItems();
+    const items = filterWebStories(filterOptions);
     if (!items.length) {
-      gridEl.innerHTML = '<p class="news-feed-status">Web stories will appear when blogs, news, or articles are published.</p>';
+      gridEl.innerHTML = "";
+      toggleWebStoriesSection(gridEl, false);
       return;
     }
 
-    gridEl.innerHTML = items.map(renderCard).join("");
+    gridEl.innerHTML = items.map(renderWebStoryCard).join("");
+    toggleWebStoriesSection(gridEl, true);
     if (window.BBN_IMAGES && typeof window.BBN_IMAGES.hydrate === "function") {
       window.BBN_IMAGES.hydrate(gridEl);
     }
   }
 
   return {
-    allItems: allItems,
-    newsItems: newsItems,
+    allWebStories: allWebStories,
+    filterWebStories: filterWebStories,
     formatDate: formatDate,
     escapeHtml: escapeHtml,
-    renderCard: renderCard,
+    renderWebStoryCard: renderWebStoryCard,
     renderWebStoriesGrid: renderWebStoriesGrid,
   };
 })();

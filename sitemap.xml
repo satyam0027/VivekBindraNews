@@ -133,6 +133,12 @@
 
   <!-- Articles — 10 new SEO articles -->
   <url>
+    <loc>https://www.vivekbindranews.com/news/vivek-bindra-news-spl-trophy-launch-2026/</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.vivekbindranews.com/vivek-bindra-news-vivek-oberoi-vadodara-retail-launch/</loc>
     <lastmod>2026-05-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -149,6 +155,12 @@
     <lastmod>2026-05-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.vivekbindranews.com/blog/vivek-bindra-news-2026-trending-again/</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.vivekbindranews.com/vivek-bindra-news-2026/</loc>
@@ -205,16 +217,17 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://www.vivekbindranews.com/article/business-growth-consultant-vs-business-coach/</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
   <!-- Web Stories -->
   <url>
-    <loc>https://www.vivekbindranews.com/web-stories/vivek-bindra-news-2026/</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.vivekbindranews.com/web-stories/entrepreneurship-growth-india-2026/</loc>
-    <lastmod>2026-05-22</lastmod>
+    <loc>https://www.vivekbindranews.com/web-stories/why-vivek-bindra-trending-again-2026/</loc>
+    <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
