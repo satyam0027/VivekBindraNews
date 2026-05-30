@@ -138,6 +138,24 @@
       height: 675,
       alt: "Signs you need a business coach for leadership, accountability, and business growth",
     },
+    vbNews2026GrowthCourses: {
+      file: "vivek-bindra-news-2026-business-growth-courses-industry-influence.webp",
+      width: 1200,
+      height: 675,
+      alt: "Dr Vivek Bindra discussing business growth, entrepreneurship courses and industry influence in 2026",
+    },
+    vbLatestNews2026: {
+      file: "vivek-bindra-latest-news-2026.webp",
+      width: 1200,
+      height: 675,
+      alt: "Latest Vivek Bindra news and business updates in 2026 for entrepreneurs and MSMEs",
+    },
+    badaBusiness2026Stats: {
+      file: "bada-business-2026-growth-statistics.webp",
+      width: 1200,
+      height: 675,
+      alt: "Bada Business growth statistics, revenue and entrepreneurship platform performance in 2026",
+    },
   };
 
   function basePath() {

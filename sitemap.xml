@@ -157,6 +157,12 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.vivekbindranews.com/blog/vivek-bindra-news-2026-latest-updates-bada-business-courses/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.vivekbindranews.com/blog/vivek-bindra-news-2026-trending-again/</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>monthly</changefreq>
@@ -225,6 +231,12 @@
   </url>
 
   <!-- Web Stories -->
+  <url>
+    <loc>https://www.vivekbindranews.com/web-stories/vivek-bindra-news-2026-web-story/</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://www.vivekbindranews.com/web-stories/why-vivek-bindra-trending-again-2026/</loc>
     <lastmod>2026-05-29</lastmod>
