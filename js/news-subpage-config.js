@@ -5,13 +5,22 @@ window.NEWS_SUBPAGE_CONFIG = {
   "vivek-bindra-news": {
     stories: [
       {
+        slug: "../news/vivek-bindra-news-petro-industech-premium-growth/",
+        title: "Vivek Bindra News: Petro Industech Enters Premium Market Segment with Bada Business Support",
+        excerpt: "Petro Industech shifts to premium products with Bada Business CGP — projected 300% growth and stronger MSME margins.",
+        badge: "Latest",
+        date: "2026-05-30",
+        image: "petroIndustechPartnership",
+        featured: true,
+      },
+      {
         slug: "../news/vivek-bindra-news-spl-trophy-launch-2026/",
         title: "Vivek Bindra News: Dr Vivek Bindra and Devkinandan Thakur Ji Maharaj Launch Sanatan Premier League Trophy",
         excerpt: "Official SPL trophy unveiling in New Delhi — Dr Vivek Bindra and Devkinandan Thakur Ji Maharaj share an inspiring message for India's youth.",
-        badge: "Latest",
+        badge: "Breaking",
         date: "2026-05-29",
         image: "vivekBindraSplTrophy",
-        featured: true,
+        featured: false,
       },
       {
         slug: "../news/dr-vivek-bindra-latest-news-lokhande-industries-growth-2026/",
@@ -39,13 +48,22 @@ window.NEWS_SUBPAGE_CONFIG = {
   "latest-business-news": {
     stories: [
       {
+        slug: "../news/vivek-bindra-news-petro-industech-premium-growth/",
+        title: "Vivek Bindra News: Petro Industech Enters Premium Market Segment with Bada Business Support",
+        excerpt: "Manufacturing MSME moves to premium segment — CGP systems, distributor growth, and operational transformation.",
+        badge: "Latest",
+        date: "2026-05-30",
+        image: "petroIndustechPartnership",
+        featured: true,
+      },
+      {
         slug: "../news/vivek-bindra-news-spl-trophy-launch-2026/",
         title: "Vivek Bindra News: Dr Vivek Bindra and Devkinandan Thakur Ji Maharaj Launch Sanatan Premier League Trophy",
         excerpt: "SPL trophy unveiled at Constitution Club of India — sports, leadership, and values for youth across India.",
-        badge: "Latest",
+        badge: "Breaking",
         date: "2026-05-29",
         image: "vivekBindraSplTrophy",
-        featured: true,
+        featured: false,
       },
       {
         slug: "../news/dr-vivek-bindra-latest-news-lokhande-industries-growth-2026/",

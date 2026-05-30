@@ -4,14 +4,24 @@
 window.SITE_NEWS_CONFIG = {
   stories: [
     {
+      slug: "news/vivek-bindra-news-petro-industech-premium-growth/",
+      title: "Vivek Bindra News: Petro Industech Enters Premium Market Segment with Bada Business Support",
+      excerpt: "Petro Industech shifts to premium products with Bada Business CGP — 300% projected growth, 66% distributor network expansion, and 70% productivity gains.",
+      categoryLabel: "Vivek Bindra News",
+      badge: "Latest",
+      date: "2026-05-30",
+      image: "petroIndustechPartnership",
+      featured: true,
+    },
+    {
       slug: "news/vivek-bindra-news-spl-trophy-launch-2026/",
       title: "Vivek Bindra News: Dr Vivek Bindra and Devkinandan Thakur Ji Maharaj Launch Sanatan Premier League Trophy",
       excerpt: "Dr Vivek Bindra and Devkinandan Thakur Ji Maharaj unveiled the Sanatan Premier League trophy in New Delhi — inspiring India's youth through sports, discipline, and cultural values.",
       categoryLabel: "Vivek Bindra News",
-      badge: "Latest",
+      badge: "Breaking",
       date: "2026-05-29",
       image: "vivekBindraSplTrophy",
-      featured: true,
+      featured: false,
     },
     {
       slug: "news/dr-vivek-bindra-latest-news-lokhande-industries-growth-2026/",

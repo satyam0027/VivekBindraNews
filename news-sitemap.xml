@@ -4,6 +4,22 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
+    <loc>https://www.vivekbindranews.com/news/vivek-bindra-news-petro-industech-premium-growth/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Vivek Bindra News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-30T10:00:00+05:30</news:publication_date>
+      <news:title>Vivek Bindra News: Petro Industech Enters Premium Market Segment with Bada Business Support</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.vivekbindranews.com/images/bada-business-petro-business-growth-partnership.webp</image:loc>
+      <image:title>Bada Business and Petro partnership featuring business leaders and growth collaboration</image:title>
+    </image:image>
+  </url>
+
+  <url>
     <loc>https://www.vivekbindranews.com/news/vivek-bindra-news-spl-trophy-launch-2026/</loc>
     <news:news>
       <news:publication>

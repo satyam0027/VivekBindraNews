@@ -156,6 +156,12 @@
       height: 675,
       alt: "Bada Business growth statistics, revenue and entrepreneurship platform performance in 2026",
     },
+    petroIndustechPartnership: {
+      file: "bada-business-petro-business-growth-partnership.webp",
+      width: 1200,
+      height: 675,
+      alt: "Bada Business and Petro partnership featuring business leaders and growth collaboration",
+    },
   };
 
   function basePath() {
