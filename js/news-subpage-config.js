@@ -5,13 +5,22 @@ window.NEWS_SUBPAGE_CONFIG = {
   "vivek-bindra-news": {
     stories: [
       {
+        slug: "../news/snehansh-properties-3x-growth-dr-vivek-bindra-bada-business/",
+        title: "Snehansh Properties Achieves 3X Growth with Dr. Vivek Bindra & Bada Business",
+        excerpt: "Real estate firm reports 3X revenue, 200% inbound lead growth, and YouTube expansion from 40K to 170K+ subscribers after Bada Business CGP.",
+        badge: "Latest",
+        date: "2026-05-31",
+        image: "snehanshPropertiesGrowth",
+        featured: true,
+      },
+      {
         slug: "../news/vivek-bindra-news-petro-industech-premium-growth/",
         title: "Vivek Bindra News: Petro Industech Enters Premium Market Segment with Bada Business Support",
         excerpt: "Petro Industech shifts to premium products with Bada Business CGP — projected 300% growth and stronger MSME margins.",
-        badge: "Latest",
+        badge: "Breaking",
         date: "2026-05-30",
         image: "petroIndustechPartnership",
-        featured: true,
+        featured: false,
       },
       {
         slug: "../news/vivek-bindra-news-spl-trophy-launch-2026/",
@@ -48,13 +57,22 @@ window.NEWS_SUBPAGE_CONFIG = {
   "latest-business-news": {
     stories: [
       {
+        slug: "../news/snehansh-properties-3x-growth-dr-vivek-bindra-bada-business/",
+        title: "Snehansh Properties Achieves 3X Growth with Dr. Vivek Bindra & Bada Business",
+        excerpt: "Palghar real estate advisory achieves 3X revenue, stronger digital reach, and scalable lead systems through Bada Business CGP.",
+        badge: "Latest",
+        date: "2026-05-31",
+        image: "snehanshPropertiesGrowth",
+        featured: true,
+      },
+      {
         slug: "../news/vivek-bindra-news-petro-industech-premium-growth/",
         title: "Vivek Bindra News: Petro Industech Enters Premium Market Segment with Bada Business Support",
         excerpt: "Manufacturing MSME moves to premium segment — CGP systems, distributor growth, and operational transformation.",
-        badge: "Latest",
+        badge: "Breaking",
         date: "2026-05-30",
         image: "petroIndustechPartnership",
-        featured: true,
+        featured: false,
       },
       {
         slug: "../news/vivek-bindra-news-spl-trophy-launch-2026/",

@@ -128,14 +128,78 @@ function initContactForm() {
   const form = document.getElementById("contact-form");
   if (!form) return;
 
+  const msg = document.getElementById("form-message");
+  const submitBtn = form.querySelector(".contact-form__submit");
+  const subjectLabels = {
+    general: "General Inquiry",
+    collaboration: "Business Collaboration",
+    guest: "Guest Article",
+    startup: "Startup Story",
+    interview: "Entrepreneur Interview",
+    media: "Media Partnership",
+    feedback: "Editorial Feedback",
+    technical: "Technical Issue",
+  };
+
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-    const msg = document.getElementById("form-message");
-    if (msg) {
-      msg.classList.add("is-success");
-      msg.textContent =
-        "Thank you for your message. We will respond to your inquiry as soon as possible.";
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
     }
-    form.reset();
+
+    const formData = new FormData(form);
+    const payload = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      subject: subjectLabels[formData.get("subject")] || formData.get("subject"),
+      message: formData.get("message"),
+      _subject: formData.get("_subject"),
+      _captcha: formData.get("_captcha"),
+      _template: formData.get("_template"),
+    };
+
+    if (msg) {
+      msg.classList.remove("is-success", "is-error");
+      msg.textContent = "";
+    }
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending…";
+    }
+
+    fetch(form.action, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(payload),
+    })
+      .then(function (response) {
+        if (!response.ok) throw new Error("Request failed");
+        return response.json();
+      })
+      .then(function () {
+        if (msg) {
+          msg.classList.add("is-success");
+          msg.textContent =
+            "Thank you for your message. We will respond to your inquiry as soon as possible.";
+        }
+        form.reset();
+      })
+      .catch(function () {
+        if (msg) {
+          msg.classList.add("is-error");
+          msg.textContent =
+            "Something went wrong. Please email us directly at vivekbindranews@gmail.com or call +91 85278 60837.";
+        }
+      })
+      .finally(function () {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Send Message";
+        }
+      });
   });
 }

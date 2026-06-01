@@ -4,14 +4,24 @@
 window.SITE_NEWS_CONFIG = {
   stories: [
     {
+      slug: "news/snehansh-properties-3x-growth-dr-vivek-bindra-bada-business/",
+      title: "Snehansh Properties Achieves 3X Growth with Dr. Vivek Bindra & Bada Business",
+      excerpt: "Snehansh Properties records 3X revenue growth, 200% rise in inbound leads, and YouTube growth from 40K to 170K+ subscribers after Bada Business CGP.",
+      categoryLabel: "Vivek Bindra News",
+      badge: "Latest",
+      date: "2026-05-31",
+      image: "snehanshPropertiesGrowth",
+      featured: true,
+    },
+    {
       slug: "news/vivek-bindra-news-petro-industech-premium-growth/",
       title: "Vivek Bindra News: Petro Industech Enters Premium Market Segment with Bada Business Support",
       excerpt: "Petro Industech shifts to premium products with Bada Business CGP — 300% projected growth, 66% distributor network expansion, and 70% productivity gains.",
       categoryLabel: "Vivek Bindra News",
-      badge: "Latest",
+      badge: "Breaking",
       date: "2026-05-30",
       image: "petroIndustechPartnership",
-      featured: true,
+      featured: false,
     },
     {
       slug: "news/vivek-bindra-news-spl-trophy-launch-2026/",

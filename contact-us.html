@@ -46,7 +46,10 @@
             <h2 class="section__title" id="contact-form-title">Send a Message</h2>
             <p class="contact-form-panel__intro">Fill out the form below and our team will respond as soon as possible.</p>
 
-            <form id="contact-form" class="contact-form" action="#" method="post" novalidate>
+            <form id="contact-form" class="contact-form" action="https://formsubmit.co/ajax/vivekbindranews@gmail.com" method="POST" novalidate>
+              <input type="hidden" name="_subject" value="New contact message — Vivek Bindra News">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
               <div class="contact-form__row">
                 <div class="form-group">
                   <label for="name">Full Name</label>
@@ -96,8 +99,14 @@
         <aside class="contact-page__aside" aria-label="Contact details">
           <div class="contact-info-card contact-info-card--email">
             <span class="contact-info-card__label">Email</span>
-            <p class="contact-info-card__value"><a href="mailto:contact@vivekbindranews.com">contact@vivekbindranews.com</a></p>
+            <p class="contact-info-card__value"><a href="mailto:vivekbindranews@gmail.com">vivekbindranews@gmail.com</a></p>
             <p class="contact-info-card__note">For all editorial, business, and general inquiries.</p>
+          </div>
+
+          <div class="contact-info-card contact-info-card--phone">
+            <span class="contact-info-card__label">Phone</span>
+            <p class="contact-info-card__value"><a href="tel:+918527860837">+91 85278 60837</a></p>
+            <p class="contact-info-card__note">Call or message for urgent editorial and business inquiries.</p>
           </div>
 
           <div class="contact-info-card">
@@ -128,7 +137,7 @@
         <div class="faq-list">
           <div class="faq-item">
             <button class="faq-question" type="button" aria-expanded="false">How can I contact Vivek Bindra News?</button>
-            <div class="faq-answer">Use the contact form on this page or email us directly at contact@vivekbindranews.com.</div>
+            <div class="faq-answer">Use the contact form on this page, email us at <a href="mailto:vivekbindranews@gmail.com">vivekbindranews@gmail.com</a>, or call <a href="tel:+918527860837">+91 85278 60837</a>.</div>
           </div>
           <div class="faq-item">
             <button class="faq-question" type="button" aria-expanded="false">Can startups share their stories?</button>

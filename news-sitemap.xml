@@ -4,6 +4,22 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
+    <loc>https://www.vivekbindranews.com/news/snehansh-properties-3x-growth-dr-vivek-bindra-bada-business/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Vivek Bindra News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-05-31T10:00:00+05:30</news:publication_date>
+      <news:title>Snehansh Properties Achieves 3X Growth with Dr. Vivek Bindra &amp; Bada Business</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.vivekbindranews.com/images/snehansh-properties-dr-vivek-bindra-bada-business-growth.jpg</image:loc>
+      <image:title>Snehansh Properties growth with Dr Vivek Bindra and Bada Business</image:title>
+    </image:image>
+  </url>
+
+  <url>
     <loc>https://www.vivekbindranews.com/news/vivek-bindra-news-petro-industech-premium-growth/</loc>
     <news:news>
       <news:publication>

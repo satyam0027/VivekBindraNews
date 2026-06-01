@@ -162,6 +162,12 @@
       height: 675,
       alt: "Bada Business and Petro partnership featuring business leaders and growth collaboration",
     },
+    snehanshPropertiesGrowth: {
+      file: "snehansh-properties-dr-vivek-bindra-bada-business-growth.jpg",
+      width: 1200,
+      height: 675,
+      alt: "Snehansh Properties growth with Dr Vivek Bindra and Bada Business",
+    },
   };
 
   function basePath() {
