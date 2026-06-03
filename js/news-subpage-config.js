@@ -5,13 +5,22 @@ window.NEWS_SUBPAGE_CONFIG = {
   "vivek-bindra-news": {
     stories: [
       {
+        slug: "../news/pune-real-estate-firm-3x-growth-vivek-bindra-cash-growth-program/",
+        title: "Pune Real Estate Firm Records 3X Growth in Site Visits with Dr Vivek Bindra's Bada Business CGP",
+        excerpt: "Relation Realtech reports 3X weekly property site visits — digital marketing overhaul, sales funnel, and channel partner incentives via CGP.",
+        badge: "Latest",
+        date: "2026-06-02",
+        image: "relationRealtechGrowth",
+        featured: true,
+      },
+      {
         slug: "../news/snehansh-properties-3x-growth-dr-vivek-bindra-bada-business/",
         title: "Snehansh Properties Achieves 3X Growth with Dr. Vivek Bindra & Bada Business",
         excerpt: "Real estate firm reports 3X revenue, 200% inbound lead growth, and YouTube expansion from 40K to 170K+ subscribers after Bada Business CGP.",
-        badge: "Latest",
+        badge: "Breaking",
         date: "2026-05-31",
         image: "snehanshPropertiesGrowth",
-        featured: true,
+        featured: false,
       },
       {
         slug: "../news/vivek-bindra-news-petro-industech-premium-growth/",
@@ -57,13 +66,22 @@ window.NEWS_SUBPAGE_CONFIG = {
   "latest-business-news": {
     stories: [
       {
+        slug: "../news/pune-real-estate-firm-3x-growth-vivek-bindra-cash-growth-program/",
+        title: "Pune Real Estate Firm Records 3X Growth in Site Visits with Dr Vivek Bindra's Bada Business CGP",
+        excerpt: "Relation Realtech achieves 3X weekly property site visits — targeted digital marketing, structured sales funnel, and channel partner rewards.",
+        badge: "Latest",
+        date: "2026-06-02",
+        image: "relationRealtechGrowth",
+        featured: true,
+      },
+      {
         slug: "../news/snehansh-properties-3x-growth-dr-vivek-bindra-bada-business/",
         title: "Snehansh Properties Achieves 3X Growth with Dr. Vivek Bindra & Bada Business",
         excerpt: "Palghar real estate advisory achieves 3X revenue, stronger digital reach, and scalable lead systems through Bada Business CGP.",
-        badge: "Latest",
+        badge: "Breaking",
         date: "2026-05-31",
         image: "snehanshPropertiesGrowth",
-        featured: true,
+        featured: false,
       },
       {
         slug: "../news/vivek-bindra-news-petro-industech-premium-growth/",

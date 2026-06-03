@@ -4,6 +4,22 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
+    <loc>https://www.vivekbindranews.com/news/pune-real-estate-firm-3x-growth-vivek-bindra-cash-growth-program/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Vivek Bindra News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-02T10:00:00+05:30</news:publication_date>
+      <news:title>Pune Real Estate Firm Records 3X Growth in Site Visits with Dr Vivek Bindra's Bada Business Cash Growth Program</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.vivekbindranews.com/images/relation-realtech-vivek-bindra-bada-business-growth.jpg</image:loc>
+      <image:title>Dr Vivek Bindra and Relation Realtech founders celebrating 3X business growth through Bada Business Cash Growth Program</image:title>
+    </image:image>
+  </url>
+
+  <url>
     <loc>https://www.vivekbindranews.com/news/snehansh-properties-3x-growth-dr-vivek-bindra-bada-business/</loc>
     <news:news>
       <news:publication>

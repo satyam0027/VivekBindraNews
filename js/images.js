@@ -168,6 +168,12 @@
       height: 675,
       alt: "Snehansh Properties growth with Dr Vivek Bindra and Bada Business",
     },
+    relationRealtechGrowth: {
+      file: "relation-realtech-vivek-bindra-bada-business-growth.jpg",
+      width: 1200,
+      height: 675,
+      alt: "Dr Vivek Bindra and Relation Realtech founders celebrating 3X business growth through Bada Business Cash Growth Program",
+    },
   };
 
   function basePath() {
