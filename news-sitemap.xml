@@ -4,6 +4,22 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
+    <loc>https://www.vivekbindranews.com/news/vivek-bindra-news-msme-growth-bada-business-latest-business-news-india/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Vivek Bindra News</news:name>
+        <news:language>hi</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-03T10:00:00+05:30</news:publication_date>
+      <news:title>Vivek Bindra News: MSME सेक्टर को नई दिशा देने के लिए Bada Business की बड़ी पहल</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.vivekbindranews.com/images/dr-vivek-bindra-bada-business-msme-news.jpg</image:loc>
+      <image:title>Dr Vivek Bindra and Bada Business MSME growth initiative in India</image:title>
+    </image:image>
+  </url>
+
+  <url>
     <loc>https://www.vivekbindranews.com/news/pune-real-estate-firm-3x-growth-vivek-bindra-cash-growth-program/</loc>
     <news:news>
       <news:publication>

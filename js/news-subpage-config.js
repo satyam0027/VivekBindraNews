@@ -5,13 +5,22 @@ window.NEWS_SUBPAGE_CONFIG = {
   "vivek-bindra-news": {
     stories: [
       {
+        slug: "../news/vivek-bindra-news-msme-growth-bada-business-latest-business-news-india/",
+        title: "Vivek Bindra News: MSME सेक्टर को नई दिशा देने के लिए Bada Business की बड़ी पहल",
+        excerpt: "Bada Business MSMEs को स्केलिंग, ऑटोमेशन, लीडरशिप और Idea to IPO पहलों के जरिए आगे बढ़ाने पर काम कर रहा है।",
+        badge: "Latest",
+        date: "2026-06-03",
+        image: "vbBadaBusinessMsmeNews",
+        featured: true,
+      },
+      {
         slug: "../news/pune-real-estate-firm-3x-growth-vivek-bindra-cash-growth-program/",
         title: "Pune Real Estate Firm Records 3X Growth in Site Visits with Dr Vivek Bindra's Bada Business CGP",
         excerpt: "Relation Realtech reports 3X weekly property site visits — digital marketing overhaul, sales funnel, and channel partner incentives via CGP.",
-        badge: "Latest",
+        badge: "Breaking",
         date: "2026-06-02",
         image: "relationRealtechGrowth",
-        featured: true,
+        featured: false,
       },
       {
         slug: "../news/snehansh-properties-3x-growth-dr-vivek-bindra-bada-business/",
@@ -66,13 +75,22 @@ window.NEWS_SUBPAGE_CONFIG = {
   "latest-business-news": {
     stories: [
       {
+        slug: "../news/vivek-bindra-news-msme-growth-bada-business-latest-business-news-india/",
+        title: "Vivek Bindra News: MSME सेक्टर को नई दिशा देने के लिए Bada Business की बड़ी पहल",
+        excerpt: "Bada Business MSMEs को स्केलिंग, ऑटोमेशन, लीडरशिप और Idea to IPO के जरिए सशक्त बना रहा है।",
+        badge: "Latest",
+        date: "2026-06-03",
+        image: "vbBadaBusinessMsmeNews",
+        featured: true,
+      },
+      {
         slug: "../news/pune-real-estate-firm-3x-growth-vivek-bindra-cash-growth-program/",
         title: "Pune Real Estate Firm Records 3X Growth in Site Visits with Dr Vivek Bindra's Bada Business CGP",
         excerpt: "Relation Realtech achieves 3X weekly property site visits — targeted digital marketing, structured sales funnel, and channel partner rewards.",
-        badge: "Latest",
+        badge: "Breaking",
         date: "2026-06-02",
         image: "relationRealtechGrowth",
-        featured: true,
+        featured: false,
       },
       {
         slug: "../news/snehansh-properties-3x-growth-dr-vivek-bindra-bada-business/",

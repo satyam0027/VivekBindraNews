@@ -174,6 +174,30 @@
       height: 675,
       alt: "Dr Vivek Bindra and Relation Realtech founders celebrating 3X business growth through Bada Business Cash Growth Program",
     },
+    hiringConsultantHero: {
+      file: "benefits-of-hiring-business-consultant-small-business-growth.webp",
+      width: 1200,
+      height: 675,
+      alt: "Business consultant helping small business owners achieve growth, strategy, and operational success",
+    },
+    vbTrustedGrowthCoach: {
+      file: "why-dr-vivek-bindra-indias-most-trusted-business-growth-coach.webp",
+      width: 1200,
+      height: 675,
+      alt: "Dr Vivek Bindra explaining business growth strategies that have made him India's most trusted business growth coach",
+    },
+    badaBusinessChangingSMEs: {
+      file: "how-bada-business-by-dr-vivek-bindra-is-changing-the-game-for-indian-smes.webp",
+      width: 1200,
+      height: 675,
+      alt: "Bada Business by Dr Vivek Bindra empowering Indian SMEs with practical business education, growth strategies, and entrepreneurial training",
+    },
+    vbBadaBusinessMsmeNews: {
+      file: "dr-vivek-bindra-bada-business-msme-news.jpg",
+      width: 1200,
+      height: 675,
+      alt: "Professional portrait of Dr Vivek Bindra, founder of Bada Business, supporting MSME growth in India",
+    },
   };
 
   function basePath() {

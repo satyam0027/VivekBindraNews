@@ -62,6 +62,17 @@ window.BLOG_FEED_CONFIG = {
 
   articles: [
     {
+      slug: "/article/benefits-of-hiring-business-consultant-for-small-business/",
+      title: "Top Benefits of Hiring a Business Consultant for Small Business Growth",
+      excerpt: "Discover the top benefits of hiring a business consultant for small business growth, sales, leadership, scaling, and startup success.",
+      category: "guides",
+      categoryLabel: "Article",
+      badge: "New",
+      date: "2026-06-03",
+      image: "hiringConsultantHero",
+      featured: true,
+    },
+    {
       slug: "/article/business-growth-consultant-vs-business-coach/",
       title: "Business Growth Consultant vs. Business Coach: What's the Real Difference?",
       excerpt: "Understand the real difference between a business growth consultant and a business coach to choose the right support for scaling your business.",
@@ -70,7 +81,7 @@ window.BLOG_FEED_CONFIG = {
       badge: "Featured",
       date: "2026-05-29",
       image: "consultantVsCoachHero",
-      featured: true,
+      featured: false,
     },
   ],
 };
