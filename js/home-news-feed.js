@@ -110,33 +110,22 @@
     });
   }
 
-  async function fetchGNews(cat) {
-    const key = CONFIG.gnewsApiKey;
-    if (!key) return null;
+  function gnewsProxyParams(cat) {
     const g = cat.gnews || {};
-    let url;
+    const params = new URLSearchParams();
+    params.set("max", String(CONFIG.maxPerCategory));
     if (g.category) {
-      url =
-        "https://gnews.io/api/v4/top-headlines?category=" +
-        encodeURIComponent(g.category) +
-        "&lang=en&country=" +
-        encodeURIComponent(g.country || "in") +
-        "&max=" +
-        CONFIG.maxPerCategory +
-        "&apikey=" +
-        encodeURIComponent(key);
+      params.set("mode", "top");
+      params.set("category", g.category);
+      params.set("country", g.country || "in");
     } else {
-      url =
-        "https://gnews.io/api/v4/search?q=" +
-        encodeURIComponent(g.q || "business india") +
-        "&lang=en&max=" +
-        CONFIG.maxPerCategory +
-        "&apikey=" +
-        encodeURIComponent(key);
+      params.set("mode", "search");
+      params.set("q", g.q || "business india");
     }
-    const res = await fetch(url);
-    if (!res.ok) throw new Error("GNews error " + res.status);
-    const data = await res.json();
+    return params;
+  }
+
+  function mapGNewsArticles(data) {
     return (data.articles || []).map(function (a) {
       return {
         title: a.title,
@@ -148,6 +137,26 @@
         feedSource: "gnews",
       };
     });
+  }
+
+  async function fetchGNews(cat) {
+    const params = gnewsProxyParams(cat);
+    if (CONFIG.gnewsApiKey) {
+      params.set("apikey", CONFIG.gnewsApiKey);
+    }
+    try {
+      const res = await fetchWithTimeout("/api/gnews?" + params.toString(), 12000);
+      if (res.ok) {
+        const data = await res.json();
+        if (data.articles && data.articles.length) return mapGNewsArticles(data);
+        if (data.error) console.warn("GNews proxy:", cat.id, data.error);
+      } else {
+        console.warn("GNews proxy HTTP", res.status, cat.id);
+      }
+    } catch (e) {
+      console.warn("GNews proxy:", cat.id, e);
+    }
+    return null;
   }
 
   function imageFromRssItem(item) {
@@ -192,11 +201,31 @@
     return "";
   }
 
+  async function fetchRssViaProxy(proxyUrl) {
+    const res = await fetchWithTimeout(proxyUrl, 15000);
+    if (!res.ok) throw new Error("RSS proxy " + res.status);
+    return res.text();
+  }
+
   async function fetchRss(cat) {
-    const proxy = "https://api.allorigins.win/raw?url=" + encodeURIComponent(cat.rss);
-    const res = await fetch(proxy);
-    if (!res.ok) throw new Error("RSS fetch failed");
-    const text = await res.text();
+    const encoded = encodeURIComponent(cat.rss);
+    let text = "";
+    const attempts = [
+      "/api/rss?url=" + encoded,
+      "https://api.codetabs.com/v1/proxy?quest=" + encoded,
+      "https://api.allorigins.win/raw?url=" + encoded,
+    ];
+    let lastErr;
+    for (let i = 0; i < attempts.length; i++) {
+      try {
+        text = await fetchRssViaProxy(attempts[i]);
+        if (text && text.indexOf("<") !== -1) break;
+      } catch (e) {
+        lastErr = e;
+        text = "";
+      }
+    }
+    if (!text) throw lastErr || new Error("RSS fetch failed");
     const doc = new DOMParser().parseFromString(text, "text/xml");
     const items = doc.querySelectorAll("item");
     const list = [];
@@ -230,28 +259,45 @@
     });
   }
 
-  async function resolveFinalUrl(url) {
-    try {
-      const res = await fetchWithTimeout(
-        "https://api.allorigins.win/get?url=" + encodeURIComponent(url),
-        10000
-      );
-      if (!res.ok) return url;
-      const data = await res.json();
-      return data.status?.url || url;
-    } catch (e) {
-      return url;
+  async function fetchRemoteHtml(pageUrl, timeoutMs) {
+    const encoded = encodeURIComponent(pageUrl);
+    const attempts = [
+      "/api/fetch?url=" + encoded,
+      "https://api.codetabs.com/v1/proxy?quest=" + encoded,
+    ];
+    for (let i = 0; i < attempts.length; i++) {
+      try {
+        const res = await fetchWithTimeout(attempts[i], timeoutMs || 8000);
+        if (res.ok) {
+          const html = await res.text();
+          if (html && html.length > 200) return html;
+        }
+      } catch (e) {
+        /* try next */
+      }
     }
+    return "";
+  }
+
+  async function resolveFinalUrl(url) {
+    if (!/news\.google\.com/i.test(url)) return url;
+    const html = await fetchRemoteHtml(url, 6000);
+    if (!html) return url;
+    const m = html.match(/url=([^&"']+)/i);
+    if (m && m[1]) {
+      try {
+        return decodeURIComponent(m[1]);
+      } catch (e) {
+        return m[1];
+      }
+    }
+    return url;
   }
 
   async function fetchOgImage(pageUrl) {
     try {
-      const res = await fetchWithTimeout(
-        "https://api.allorigins.win/raw?url=" + encodeURIComponent(pageUrl),
-        10000
-      );
-      if (!res.ok) return "";
-      const html = await res.text();
+      const html = await fetchRemoteHtml(pageUrl, 8000);
+      if (!html) return "";
       const patterns = [
         /<meta[^>]+property=["']og:image(?::secure_url)?["'][^>]+content=["']([^"']+)["']/i,
         /<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:image(?::secure_url)?["']/i,
@@ -288,13 +334,18 @@
   }
 
   async function enrichMissingImages(articles) {
-    const tasks = articles.map(async function (article) {
-      if (isValidImageUrl(article.image)) return article;
-      const image = await enrichArticleImage(article);
-      if (image) article.image = image;
-      return article;
+    if (articles.length && articles[0].feedSource === "gnews") {
+      return articles;
+    }
+    const need = articles.filter(function (a) {
+      return !isValidImageUrl(a.image);
     });
-    return Promise.all(tasks);
+    const limit = Math.min(need.length, 4);
+    for (let i = 0; i < limit; i++) {
+      const image = await enrichArticleImage(need[i]);
+      if (image) need[i].image = image;
+    }
+    return articles;
   }
 
   async function loadCategory(cat) {
@@ -452,16 +503,16 @@
         }).length;
         if (meta.usedGnews) {
           statusEl.textContent =
-            "Powered by GNews.io · " + withImages + " of " + articles.length + " with images · External sources";
+            "Powered by GNews.io · " + articles.length + " headlines · External sources";
         } else {
           statusEl.textContent =
-            "Headlines via Google News RSS · " + withImages + " of " + articles.length + " with images · External sources";
+            "Headlines via Google News RSS (GNews unavailable — add GNEWS_API_KEY on Vercel or redeploy with /api/gnews) · External sources";
         }
       }
     } catch (err) {
       console.error(err);
       gridEl.innerHTML =
-        '<p class="news-feed-status">Could not load news. Check your connection or update your GNews API key in <code>js/news-feed-config.js</code>.</p>';
+        '<p class="news-feed-status">Could not load live headlines. On Vercel, add <code>GNEWS_API_KEY</code> in Environment Variables and redeploy. RSS fallback may also be blocked by third-party proxies.</p>';
       if (statusEl) statusEl.textContent = "";
     }
   }

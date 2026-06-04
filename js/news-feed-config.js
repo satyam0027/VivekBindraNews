@@ -4,8 +4,11 @@
  * Without a key, Google News RSS is used (no signup required).
  */
 window.NEWS_FEED_CONFIG = {
-  /** Paste your GNews API key here, or leave empty to use RSS feeds */
-  gnewsApiKey: "74315da44b91d1ded10f3358873b2241",
+  /**
+   * GNews key — used by /api/gnews on Vercel (not sent to gnews.io from the browser).
+   * Prefer GNEWS_API_KEY in Vercel Environment Variables; this field is a fallback.
+   */
+  gnewsApiKey: "bdad83742f183c48bb0e7b7ddf028c56",
 
   maxPerCategory: 6,
 
