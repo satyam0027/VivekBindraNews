@@ -5,6 +5,14 @@
 window.WEB_STORIES_CONFIG = {
   stories: [
     {
+      slug: "/web-stories/best-entrepreneur-training-program-startup-founders-india-web-story/",
+      title: "Best Entrepreneur Training Program for Startup Founders in India",
+      excerpt: "Discover the best entrepreneur training program in India with Dr Vivek Bindra and Bada Business — leadership, mentorship, and startup growth.",
+      image: "entrepreneurTrainingHero",
+      date: "2026-06-04",
+      relatedBlog: "blog/best-entrepreneur-training-program-india/",
+    },
+    {
       slug: "/web-stories/vivek-bindra-news-2026-web-story/",
       title: "Vivek Bindra News 2026: Latest Updates, Bada Business & Courses",
       excerpt: "Explore the latest Vivek Bindra News 2026 — Bada Business leadership programmes, Idea to IPO, and entrepreneurship courses.",

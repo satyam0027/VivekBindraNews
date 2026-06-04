@@ -198,6 +198,24 @@
       height: 675,
       alt: "Professional portrait of Dr Vivek Bindra, founder of Bada Business, supporting MSME growth in India",
     },
+    entrepreneurTrainingHero: {
+      file: "Best-entrepreneur-training-program-startup-founders-india.webp",
+      width: 1200,
+      height: 675,
+      alt: "Entrepreneur training program for startup founders",
+    },
+    vbBusinessGrowthMovement: {
+      file: "Dr-vivek-bindra-business-growth-movement-india.webp",
+      width: 1200,
+      height: 675,
+      alt: "Dr Vivek Bindra mentoring entrepreneurs",
+    },
+    entrepreneurMentorshipBenefits: {
+      file: "benefits-of-entrepreneur-mentorship-business-coaching.webp",
+      width: 1200,
+      height: 675,
+      alt: "Business coaching benefits for founders",
+    },
   };
 
   function basePath() {

@@ -10,6 +10,17 @@ window.BLOG_FEED_CONFIG = {
 
   blogs: [
     {
+      slug: "blog/best-entrepreneur-training-program-india/",
+      title: "Best Entrepreneur Training Program for Startup Founders in India",
+      excerpt: "Discover India's best entrepreneur training program for startup founders with business mentorship, leadership training, and growth strategies from Dr Vivek Bindra and Bada Business.",
+      category: "entrepreneurship",
+      categoryLabel: "Blog",
+      badge: "New",
+      date: "2026-06-04",
+      image: "entrepreneurTrainingHero",
+      featured: true,
+    },
+    {
       slug: "blog/vivek-bindra-news-2026/",
       title: "Vivek Bindra News: Latest Updates Every Entrepreneur Should Know",
       excerpt: "Get the latest Vivek Bindra News 2026 including CGP 2.0, Idea to IPO, Bada Business updates, AI business coach, and entrepreneur insights.",
@@ -18,7 +29,7 @@ window.BLOG_FEED_CONFIG = {
       badge: "Featured",
       date: "2026-05-27",
       image: "vivekBindraNews2026",
-      featured: true,
+      featured: false,
     },
     {
       slug: "blog/vivek-bindra-news-business-growth-india/",
@@ -68,7 +79,7 @@ window.BLOG_FEED_CONFIG = {
       category: "guides",
       categoryLabel: "Article",
       badge: "New",
-      date: "2026-06-03",
+      date: "2026-06-02",
       image: "hiringConsultantHero",
       featured: true,
     },
