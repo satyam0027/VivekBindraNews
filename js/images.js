@@ -216,6 +216,24 @@
       height: 675,
       alt: "Business coaching benefits for founders",
     },
+    topBusinessCoachHero: {
+      file: "top-business-coach-india-startup-sme-growth-dr-vivek-bindra.webp",
+      width: 1200,
+      height: 675,
+      alt: "Dr Vivek Bindra top business coach in India helping startups and SMEs achieve business growth",
+    },
+    vbMostTrustedBusinessCoach: {
+      file: "dr-vivek-bindra-indias-most-trusted-business-coach.webp",
+      width: 1200,
+      height: 675,
+      alt: "Dr Vivek Bindra India's most trusted business coach and entrepreneur mentor",
+    },
+    successfulEntrepreneursMentorship: {
+      file: "successful-entrepreneurs-business-mentorship-dr-vivek-bindra.webp",
+      width: 1200,
+      height: 675,
+      alt: "Successful entrepreneurs achieve growth through business mentorship and expert guidance",
+    },
   };
 
   function basePath() {

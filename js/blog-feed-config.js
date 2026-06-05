@@ -73,6 +73,17 @@ window.BLOG_FEED_CONFIG = {
 
   articles: [
     {
+      slug: "/article/top-business-coach-india-startup-sme-growth/",
+      title: "Top Business Coach in India for Startup and SME Growth",
+      excerpt: "Discover the top business coach in India for startup and SME growth, leadership, sales, and business scaling with expert mentorship.",
+      category: "guides",
+      categoryLabel: "Article",
+      badge: "New",
+      date: "2026-06-05",
+      image: "topBusinessCoachHero",
+      featured: true,
+    },
+    {
       slug: "/article/benefits-of-hiring-business-consultant-for-small-business/",
       title: "Top Benefits of Hiring a Business Consultant for Small Business Growth",
       excerpt: "Discover the top benefits of hiring a business consultant for small business growth, sales, leadership, scaling, and startup success.",
@@ -81,7 +92,7 @@ window.BLOG_FEED_CONFIG = {
       badge: "New",
       date: "2026-06-02",
       image: "hiringConsultantHero",
-      featured: true,
+      featured: false,
     },
     {
       slug: "/article/business-growth-consultant-vs-business-coach/",
