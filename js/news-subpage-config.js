@@ -5,13 +5,22 @@ window.NEWS_SUBPAGE_CONFIG = {
   "vivek-bindra-news": {
     stories: [
       {
+        slug: "../news/vivek-bindra-news-shree-hari-ornaments-3x-growth-bada-business/",
+        title: "Vivek Bindra News: Shree Hari Ornaments Achieves 3X Growth with Bada Business Program",
+        excerpt: "Surat jewellery wholesaler reports nearly 3X growth — approval-to-ownership model shift, inventory audit, and Ahmedabad market entry via CGP.",
+        badge: "Breaking",
+        date: "2026-06-05",
+        image: "shreeHariOrnamentsGrowth",
+        featured: true,
+      },
+      {
         slug: "../news/vivek-bindra-news-msme-growth-bada-business-latest-business-news-india/",
         title: "Vivek Bindra News: MSME सेक्टर को नई दिशा देने के लिए Bada Business की बड़ी पहल",
         excerpt: "Bada Business MSMEs को स्केलिंग, ऑटोमेशन, लीडरशिप और Idea to IPO पहलों के जरिए आगे बढ़ाने पर काम कर रहा है।",
         badge: "Latest",
         date: "2026-06-03",
         image: "vbBadaBusinessMsmeNews",
-        featured: true,
+        featured: false,
       },
       {
         slug: "../news/pune-real-estate-firm-3x-growth-vivek-bindra-cash-growth-program/",
@@ -75,13 +84,22 @@ window.NEWS_SUBPAGE_CONFIG = {
   "latest-business-news": {
     stories: [
       {
+        slug: "../news/vivek-bindra-news-shree-hari-ornaments-3x-growth-bada-business/",
+        title: "Vivek Bindra News: Shree Hari Ornaments Achieves 3X Growth with Bada Business Program",
+        excerpt: "Surat B2B jewellery manufacturer achieves nearly 3X growth — cash flow restructuring, inventory transformation, and Ahmedabad expansion.",
+        badge: "Breaking",
+        date: "2026-06-05",
+        image: "shreeHariOrnamentsGrowth",
+        featured: true,
+      },
+      {
         slug: "../news/vivek-bindra-news-msme-growth-bada-business-latest-business-news-india/",
         title: "Vivek Bindra News: MSME सेक्टर को नई दिशा देने के लिए Bada Business की बड़ी पहल",
         excerpt: "Bada Business MSMEs को स्केलिंग, ऑटोमेशन, लीडरशिप और Idea to IPO के जरिए सशक्त बना रहा है।",
         badge: "Latest",
         date: "2026-06-03",
         image: "vbBadaBusinessMsmeNews",
-        featured: true,
+        featured: false,
       },
       {
         slug: "../news/pune-real-estate-firm-3x-growth-vivek-bindra-cash-growth-program/",

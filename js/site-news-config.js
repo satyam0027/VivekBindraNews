@@ -4,6 +4,16 @@
 window.SITE_NEWS_CONFIG = {
   stories: [
     {
+      slug: "news/vivek-bindra-news-shree-hari-ornaments-3x-growth-bada-business/",
+      title: "Vivek Bindra News: Shree Hari Ornaments Achieves 3X Growth with Bada Business Program",
+      excerpt: "Surat B2B jewellery manufacturer Shree Hari Ornaments reports nearly 3X business growth after CGP — inventory ownership model, data-driven stock optimisation, and Ahmedabad expansion.",
+      categoryLabel: "Vivek Bindra News",
+      badge: "Breaking",
+      date: "2026-06-05",
+      image: "shreeHariOrnamentsGrowth",
+      featured: true,
+    },
+    {
       slug: "news/vivek-bindra-news-msme-growth-bada-business-latest-business-news-india/",
       title: "Vivek Bindra News: MSME सेक्टर को नई दिशा देने के लिए Bada Business की बड़ी पहल",
       excerpt: "Bada Business MSMEs को बिजनेस स्केलिंग, ऑटोमेशन, लीडरशिप डेवलपमेंट और Idea to IPO जैसी पहलों के जरिए आगे बढ़ाने पर काम कर रहा है।",
@@ -11,7 +21,7 @@ window.SITE_NEWS_CONFIG = {
       badge: "Latest",
       date: "2026-06-03",
       image: "vbBadaBusinessMsmeNews",
-      featured: true,
+      featured: false,
     },
     {
       slug: "news/pune-real-estate-firm-3x-growth-vivek-bindra-cash-growth-program/",

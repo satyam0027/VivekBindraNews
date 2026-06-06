@@ -4,6 +4,22 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
+    <loc>https://www.vivekbindranews.com/news/vivek-bindra-news-shree-hari-ornaments-3x-growth-bada-business/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Vivek Bindra News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-05T10:00:00+05:30</news:publication_date>
+      <news:title>Vivek Bindra News: Shree Hari Ornaments Achieves 3X Growth with Bada Business Program</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.vivekbindranews.com/images/shree-hari-ornaments-vivek-bindra-bada-business-growth.png</image:loc>
+      <image:title>Dr Vivek Bindra and Mr. Kaushik Kathiriya of Shree Hari Ornaments celebrate 3X business growth through Bada Business</image:title>
+    </image:image>
+  </url>
+
+  <url>
     <loc>https://www.vivekbindranews.com/news/vivek-bindra-news-msme-growth-bada-business-latest-business-news-india/</loc>
     <news:news>
       <news:publication>
@@ -78,7 +94,7 @@
       <news:title>Vivek Bindra News: Dr Vivek Bindra and Devkinandan Thakur Ji Maharaj Launch Sanatan Premier League Trophy</news:title>
     </news:news>
     <image:image>
-      <image:loc>https://www.vivekbindranews.com/images/vivek-bindra-spl-trophy.webp</image:loc>
+      <image:loc>https://www.vivekbindranews.com/images/vivek-bindra-spl-trophy.png</image:loc>
       <image:title>Dr Vivek Bindra and Devkinandan Thakur Ji Maharaj at SPL Trophy Launch Event</image:title>
     </image:image>
   </url>

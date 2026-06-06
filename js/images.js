@@ -97,7 +97,7 @@
       alt: "Lokhande Industries achieves massive business growth with Bada Business and Dr Vivek Bindra (2026)",
     },
     vivekBindraSplTrophy: {
-      file: "vivek-bindra-spl-trophy.webp",
+      file: "vivek-bindra-spl-trophy.png",
       width: 1200,
       height: 800,
       alt: "Dr Vivek Bindra and Devkinandan Thakur Ji Maharaj at SPL Trophy Launch Event",
@@ -173,6 +173,12 @@
       width: 1200,
       height: 675,
       alt: "Dr Vivek Bindra and Relation Realtech founders celebrating 3X business growth through Bada Business Cash Growth Program",
+    },
+    shreeHariOrnamentsGrowth: {
+      file: "shree-hari-ornaments-vivek-bindra-bada-business-growth.png",
+      width: 1200,
+      height: 675,
+      alt: "Dr Vivek Bindra and Mr. Kaushik Kathiriya of Shree Hari Ornaments celebrate 3X business growth through Bada Business Cash Growth Program",
     },
     hiringConsultantHero: {
       file: "benefits-of-hiring-business-consultant-small-business-growth.webp",
