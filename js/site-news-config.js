@@ -4,6 +4,16 @@
 window.SITE_NEWS_CONFIG = {
   stories: [
     {
+      slug: "news/dr-vivek-bindra-aurita-natural-diamonds-growth/",
+      title: "How Dr Vivek Bindra Helped Aurita Natural Diamonds Achieve 4x Inventory Turnover and 250% Business Growth",
+      excerpt: "Ahmedabad jewellery brand Aurita Natural Diamonds reports 4x inventory rotation, ₹10 Cr additional revenue, and ₹2.5 Cr internally funded store expansion after Bada Business consulting.",
+      categoryLabel: "Vivek Bindra News",
+      badge: "Breaking",
+      date: "2026-06-06",
+      image: "auritaNaturalDiamondsGrowth",
+      featured: true,
+    },
+    {
       slug: "news/vivek-bindra-news-shree-hari-ornaments-3x-growth-bada-business/",
       title: "Vivek Bindra News: Shree Hari Ornaments Achieves 3X Growth with Bada Business Program",
       excerpt: "Surat B2B jewellery manufacturer Shree Hari Ornaments reports nearly 3X business growth after CGP — inventory ownership model, data-driven stock optimisation, and Ahmedabad expansion.",
@@ -11,7 +21,7 @@ window.SITE_NEWS_CONFIG = {
       badge: "Breaking",
       date: "2026-06-05",
       image: "shreeHariOrnamentsGrowth",
-      featured: true,
+      featured: false,
     },
     {
       slug: "news/vivek-bindra-news-msme-growth-bada-business-latest-business-news-india/",

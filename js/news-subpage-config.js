@@ -5,13 +5,22 @@ window.NEWS_SUBPAGE_CONFIG = {
   "vivek-bindra-news": {
     stories: [
       {
+        slug: "../news/dr-vivek-bindra-aurita-natural-diamonds-growth/",
+        title: "How Dr Vivek Bindra Helped Aurita Natural Diamonds Achieve 4x Inventory Turnover and 250% Business Growth",
+        excerpt: "Ahmedabad diamond jewellery brand unlocks ₹2.5 Cr internal capital, 4x stock rotation, and ₹10 Cr revenue boost through Bada Business inventory consulting.",
+        badge: "Breaking",
+        date: "2026-06-06",
+        image: "auritaNaturalDiamondsGrowth",
+        featured: true,
+      },
+      {
         slug: "../news/vivek-bindra-news-shree-hari-ornaments-3x-growth-bada-business/",
         title: "Vivek Bindra News: Shree Hari Ornaments Achieves 3X Growth with Bada Business Program",
         excerpt: "Surat jewellery wholesaler reports nearly 3X growth — approval-to-ownership model shift, inventory audit, and Ahmedabad market entry via CGP.",
         badge: "Breaking",
         date: "2026-06-05",
         image: "shreeHariOrnamentsGrowth",
-        featured: true,
+        featured: false,
       },
       {
         slug: "../news/vivek-bindra-news-msme-growth-bada-business-latest-business-news-india/",
@@ -84,13 +93,22 @@ window.NEWS_SUBPAGE_CONFIG = {
   "latest-business-news": {
     stories: [
       {
+        slug: "../news/dr-vivek-bindra-aurita-natural-diamonds-growth/",
+        title: "How Dr Vivek Bindra Helped Aurita Natural Diamonds Achieve 4x Inventory Turnover and 250% Business Growth",
+        excerpt: "Premium diamond jewellery brand achieves 4x inventory turnover, debt-free store funding, and 250% projected growth after Bada Business engagement.",
+        badge: "Breaking",
+        date: "2026-06-06",
+        image: "auritaNaturalDiamondsGrowth",
+        featured: true,
+      },
+      {
         slug: "../news/vivek-bindra-news-shree-hari-ornaments-3x-growth-bada-business/",
         title: "Vivek Bindra News: Shree Hari Ornaments Achieves 3X Growth with Bada Business Program",
         excerpt: "Surat B2B jewellery manufacturer achieves nearly 3X growth — cash flow restructuring, inventory transformation, and Ahmedabad expansion.",
         badge: "Breaking",
         date: "2026-06-05",
         image: "shreeHariOrnamentsGrowth",
-        featured: true,
+        featured: false,
       },
       {
         slug: "../news/vivek-bindra-news-msme-growth-bada-business-latest-business-news-india/",

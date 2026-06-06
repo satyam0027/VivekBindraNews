@@ -180,6 +180,12 @@
       height: 675,
       alt: "Dr Vivek Bindra and Mr. Kaushik Kathiriya of Shree Hari Ornaments celebrate 3X business growth through Bada Business Cash Growth Program",
     },
+    auritaNaturalDiamondsGrowth: {
+      file: "aurita-natural-diamonds-vivek-bindra-bada-business-growth.png",
+      width: 1200,
+      height: 675,
+      alt: "Dr Vivek Bindra and Shrey Contractor of Aurita Natural Diamonds celebrate business growth through Bada Business",
+    },
     hiringConsultantHero: {
       file: "benefits-of-hiring-business-consultant-small-business-growth.webp",
       width: 1200,
