@@ -73,6 +73,17 @@ window.BLOG_FEED_CONFIG = {
 
   articles: [
     {
+      slug: "/article/vivek-bindra-news-journey-achievements-latest-updates/",
+      title: "Vivek Bindra News: India's Most Inspiring Business Coach — Journey, Achievements & Latest Updates",
+      excerpt: "Read the latest Vivek Bindra news — from his journey as Asia's top business coach to Bada Business milestones, YouTube records, and entrepreneur impact across India.",
+      category: "guides",
+      categoryLabel: "Article",
+      badge: "New",
+      date: "2026-06-06",
+      image: "vbNewsCoachIndia2026",
+      featured: true,
+    },
+    {
       slug: "/article/top-business-coach-india-startup-sme-growth/",
       title: "Top Business Coach in India for Startup and SME Growth",
       excerpt: "Discover the top business coach in India for startup and SME growth, leadership, sales, and business scaling with expert mentorship.",
@@ -81,7 +92,7 @@ window.BLOG_FEED_CONFIG = {
       badge: "New",
       date: "2026-06-05",
       image: "topBusinessCoachHero",
-      featured: true,
+      featured: false,
     },
     {
       slug: "/article/benefits-of-hiring-business-consultant-for-small-business/",

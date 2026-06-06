@@ -186,6 +186,24 @@
       height: 675,
       alt: "Dr Vivek Bindra and Shrey Contractor of Aurita Natural Diamonds celebrate business growth through Bada Business",
     },
+    vbNewsCoachIndia2026: {
+      file: "vivek-bindra-news-business-coach-india-journey-achievements-2026.webp",
+      width: 1200,
+      height: 675,
+      alt: "Vivek Bindra News – India's leading business coach, entrepreneur, and motivational speaker sharing his journey, achievements, and latest 2026 updates",
+    },
+    vbNewsDelhiToAsiaChannel: {
+      file: "vivek-bindra-news-delhi-to-asias-biggest-business-channel.webp",
+      width: 1200,
+      height: 675,
+      alt: "Vivek Bindra News highlighting Dr Vivek Bindra's inspiring journey from Delhi to building Asia's biggest entrepreneurship and business learning channel",
+    },
+    vbNewsBadaBusiness2026Updates: {
+      file: "vivek-bindra-news-bada-business-2026-updates.webp",
+      width: 1200,
+      height: 675,
+      alt: "Vivek Bindra News covering the latest 2026 initiatives, business programs, and entrepreneurial growth strategies by Dr Vivek Bindra and Bada Business",
+    },
     hiringConsultantHero: {
       file: "benefits-of-hiring-business-consultant-small-business-growth.webp",
       width: 1200,
