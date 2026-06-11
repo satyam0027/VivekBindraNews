@@ -971,6 +971,23 @@ li { margin-bottom: 0.35rem; }
   background: var(--color-bg-soft);
 }
 
+.article-figure__media[data-img-fit="contain"] {
+  aspect-ratio: auto;
+  height: auto;
+  min-height: 0;
+}
+
+.article-figure__media[data-img-fit="contain"] > img,
+.article-figure__media[data-img-fit="contain"] .media-img {
+  position: static;
+  inset: auto;
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
+
 .article-body blockquote {
   border-left: 3px solid var(--color-accent);
   padding: 1rem 1.25rem;

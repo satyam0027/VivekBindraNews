@@ -204,6 +204,42 @@
       height: 675,
       alt: "Vivek Bindra News covering the latest 2026 initiatives, business programs, and entrepreneurial growth strategies by Dr Vivek Bindra and Bada Business",
     },
+    vbHindiNews2026Hero: {
+      file: "vivek-bindra-news-2026-business-growth-course-impact.webp",
+      width: 1200,
+      height: 675,
+      alt: "विवेक बिंद्रा न्यूज़ 2026 बिजनेस ग्रोथ कोर्सेज और इंडस्ट्री में बढ़ता प्रभाव",
+    },
+    vbHindiNews2026Headlines: {
+      file: "dr-vivek-bindra-news-2026-business-leadership-program.webp",
+      width: 1200,
+      height: 675,
+      alt: "2026 में डॉ विवेक बिंद्रा की लेटेस्ट न्यूज़ और बड़ा बिजनेस लीडरशिप प्रोग्राम",
+    },
+    vbHindiNews2026Seminar: {
+      file: "dr-vivek-bindra-new-seminar-2026-business-training.webp",
+      width: 1200,
+      height: 675,
+      alt: "डॉ विवेक बिंद्रा नया सेमिनार 2026 बिजनेस ट्रेनिंग और लीडरशिप प्रोग्राम",
+    },
+    topBusinessCoachesIndiaHero: {
+      file: "top-business-coaches-in-india-helping-entrepreneurs-scale-faster.webp",
+      width: 624,
+      height: 333,
+      alt: "Top business coaches in India helping entrepreneurs and startups scale their businesses faster",
+    },
+    whyEntrepreneursFailWithoutCoach: {
+      file: "why-most-entrepreneurs-fail-without-a-business-coach.webp",
+      width: 624,
+      height: 416,
+      alt: "Why most entrepreneurs fail without a business coach and how coaching helps startups grow faster",
+    },
+    whoNeedsStartupBusinessCoach: {
+      file: "who-really-needs-a-startup-business-coach.webp",
+      width: 624,
+      height: 416,
+      alt: "Who really needs a startup business coach in India for business growth and scaling success",
+    },
     hiringConsultantHero: {
       file: "benefits-of-hiring-business-consultant-small-business-growth.webp",
       width: 1200,

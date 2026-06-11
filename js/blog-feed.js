@@ -74,8 +74,9 @@
     }
   }
 
-  function renderCard(post) {
-    const linkLabel = isArticles ? "Read article" : "Read blog";
+  function renderCard(post, opts) {
+    opts = opts || {};
+    const linkLabel = opts.linkLabel || (isArticles ? "Read article" : "Read blog");
     return (
       '<article class="card news-card" data-category="' + escapeHtml(post.category) + '">' +
         '<a href="' + escapeHtml(post.slug) + '" class="card__image-link">' +
@@ -84,8 +85,8 @@
         '<div class="card__body">' +
           '<span class="intent-badge">' + escapeHtml(post.badge) + '</span>' +
           '<span class="card__category">' + escapeHtml(formatDate(post.date)) + '</span>' +
-          '<h3 class="card__title"><a href="' + escapeHtml(post.slug) + '">' + escapeHtml(post.title) + '</a></h3>' +
-          '<p class="card__excerpt">' + escapeHtml(post.excerpt) + '</p>' +
+          '<h3 class="card__title"><a href="' + escapeHtml(post.slug) + '"' + (opts.lang ? ' lang="' + escapeHtml(opts.lang) + '"' : '') + '>' + escapeHtml(post.title) + '</a></h3>' +
+          '<p class="card__excerpt"' + (opts.lang ? ' lang="' + escapeHtml(opts.lang) + '"' : '') + '>' + escapeHtml(post.excerpt) + '</p>' +
           '<p class="card__meta"><a href="' + escapeHtml(post.slug) + '">' + linkLabel + '</a></p>' +
         '</div>' +
       '</article>'
@@ -113,12 +114,33 @@
       return;
     }
 
-    gridEl.innerHTML = filtered.map(renderCard).join("");
+    gridEl.innerHTML = filtered.map(function (post) { return renderCard(post); }).join("");
     if (countEl) {
       countEl.textContent =
         filtered.length + " " + (filtered.length === 1 ? emptyLabel.slice(0, -1) : emptyLabel) +
         (filter === "all" ? "" : " in " + ((categories.find(function (c) { return c.id === filter; }) || {}).label));
     }
+  }
+
+  function renderHindiGrid() {
+    const gridEl = document.getElementById("blog-feed-grid-hindi");
+    if (!gridEl || isArticles) return;
+
+    const hindiItems = (CONFIG.hindiBlogs || []).slice().sort(function (a, b) {
+      return new Date(b.date) - new Date(a.date);
+    });
+
+    if (!hindiItems.length) {
+      gridEl.innerHTML =
+        '<p class="news-feed-status">अभी कोई हिंदी ब्लॉग प्रकाशित नहीं है। जल्द ही नए लेख जोड़े जाएंगे।<br><span lang="en">No Hindi blogs published yet. New posts will be added here soon.</span></p>';
+      return;
+    }
+
+    gridEl.innerHTML = hindiItems
+      .map(function (post) {
+        return renderCard(post, { lang: "hi", linkLabel: "ब्लॉग पढ़ें" });
+      })
+      .join("");
   }
 
   function renderFilters() {
@@ -187,12 +209,17 @@
       }
     } else {
       renderGrid("all");
+      renderHindiGrid();
       renderWebStories();
     }
 
     const root = document.getElementById("blog-hub") || document.getElementById("blog-feed-grid");
     if (root && window.BBN_IMAGES && typeof window.BBN_IMAGES.hydrate === "function") {
       window.BBN_IMAGES.hydrate(root);
+    }
+    const hindiGrid = document.getElementById("blog-feed-grid-hindi");
+    if (hindiGrid && window.BBN_IMAGES && typeof window.BBN_IMAGES.hydrate === "function") {
+      window.BBN_IMAGES.hydrate(hindiGrid);
     }
   }
 

@@ -66,12 +66,41 @@ window.BLOG_FEED_CONFIG = {
     },
   ],
 
+  /**
+   * Hindi blogs — shown in the "Hindi Blogs" section on blog.html.
+   * Add entries here as you publish (same fields as `blogs` above).
+   */
+  hindiBlogs: [
+    {
+      slug: "blog/hindi/vivek-bindra-news-2026-business-growth-seminar-course-updates/",
+      title: "विवेक बिंद्रा न्यूज़ 2026: बिजनेस ग्रोथ, कोर्सेज और इंडस्ट्री में बढ़ता प्रभाव",
+      excerpt: "जानिए विवेक बिंद्रा न्यूज़ 2026 की ताज़ा अपडेट्स, बड़ा बिजनेस के नए सेमिनार, Idea to IPO प्रोग्राम और MSME उद्यमियों के लिए नई पहल।",
+      category: "hindi",
+      categoryLabel: "हिंदी ब्लॉग",
+      badge: "नया",
+      date: "2026-06-06",
+      image: "vbHindiNews2026Hero",
+      featured: true,
+    },
+  ],
+
   articleCategories: [
     { id: "all", label: "All Articles" },
     { id: "guides", label: "Business Guides" },
   ],
 
   articles: [
+    {
+      slug: "/article/top-business-coaches-in-india/",
+      title: "Top Business Coaches in India Helping Entrepreneurs Scale Faster",
+      excerpt: "Discover the top business coaches in India helping entrepreneurs and startups scale faster. Compare the best business mentors, leadership coaches, and startup coaches.",
+      category: "guides",
+      categoryLabel: "Article",
+      badge: "New",
+      date: "2026-06-06",
+      image: "topBusinessCoachesIndiaHero",
+      featured: true,
+    },
     {
       slug: "/article/vivek-bindra-news-journey-achievements-latest-updates/",
       title: "Vivek Bindra News: India's Most Inspiring Business Coach — Journey, Achievements & Latest Updates",
@@ -81,7 +110,7 @@ window.BLOG_FEED_CONFIG = {
       badge: "New",
       date: "2026-06-06",
       image: "vbNewsCoachIndia2026",
-      featured: true,
+      featured: false,
     },
     {
       slug: "/article/top-business-coach-india-startup-sme-growth/",

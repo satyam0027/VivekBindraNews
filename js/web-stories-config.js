@@ -13,6 +13,14 @@ window.WEB_STORIES_CONFIG = {
       relatedBlog: "blog/best-entrepreneur-training-program-india/",
     },
     {
+      slug: "/web-stories/vivek-bindra-news-2026-hindi-web-story/",
+      title: "विवेक बिंद्रा न्यूज़ 2026: बिजनेस ग्रोथ, सेमिनार और बड़ा बिजनेस की नई पहल",
+      excerpt: "जानिए विवेक बिंद्रा न्यूज़ 2026 की बड़ी अपडेट्स — नए बिजनेस सेमिनार, Idea to IPO, Leadership Funnel और MSME ग्रोथ स्ट्रेटेजी।",
+      image: "vbHindiNews2026Hero",
+      date: "2026-06-06",
+      relatedBlog: "blog/hindi/vivek-bindra-news-2026-business-growth-seminar-course-updates/",
+    },
+    {
       slug: "/web-stories/vivek-bindra-news-2026-web-story/",
       title: "Vivek Bindra News 2026: Latest Updates, Bada Business & Courses",
       excerpt: "Explore the latest Vivek Bindra News 2026 — Bada Business leadership programmes, Idea to IPO, and entrepreneurship courses.",
