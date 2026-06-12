@@ -222,6 +222,30 @@
       height: 675,
       alt: "डॉ विवेक बिंद्रा नया सेमिनार 2026 बिजनेस ट्रेनिंग और लीडरशिप प्रोग्राम",
     },
+    vbHindiMsme2026Hero: {
+      file: "dr-vivek-bindra-news-2026-bada-business-msme.webp",
+      width: 624,
+      height: 343,
+      alt: "Dr Vivek Bindra News 2026 और Bada Business के MSME ग्रोथ प्रोग्राम्स",
+    },
+    vbHindiWhoIsBindra: {
+      file: "who-is-dr-vivek-bindra-business-coach.webp",
+      width: 624,
+      height: 343,
+      alt: "कौन हैं Dr Vivek Bindra भारत के प्रसिद्ध बिजनेस कोच और मोटिवेशनल स्पीकर",
+    },
+    vbHindiBadaPrograms2026: {
+      file: "bada-business-major-programs-2026.webp",
+      width: 624,
+      height: 351,
+      alt: "Bada Business के प्रमुख प्रोग्राम्स जैसे CGP 2.0, Idea to IPO और Leadership Funnel Program",
+    },
+    vbHindiWhyImportant: {
+      file: "why-bada-business-important-for-entrepreneurs.webp",
+      width: 624,
+      height: 341,
+      alt: "एंटरप्रेन्योर्स के लिए Bada Business और Dr Vivek Bindra के बिजनेस प्रोग्राम्स क्यों महत्वपूर्ण हैं",
+    },
     topBusinessCoachesIndiaHero: {
       file: "top-business-coaches-in-india-helping-entrepreneurs-scale-faster.webp",
       width: 624,

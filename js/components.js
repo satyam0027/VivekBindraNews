@@ -26,7 +26,15 @@
       ],
     },
     { href: "/about-us.html", label: "About Us", id: "about" },
-    { href: "/blog.html", label: "Blog", id: "blog" },
+    {
+      href: "/blog.html",
+      label: "Blog",
+      id: "blog",
+      children: [
+        { href: "/blog.html#blog-english-title", label: "English Blog" },
+        { href: "/blog.html#blog-hindi-title", label: "Hindi Blog" },
+      ],
+    },
     { href: "/articles.html", label: "Articles", id: "articles" },
     { href: "/contact-us.html", label: "Contact Us", id: "contact" },
   ];

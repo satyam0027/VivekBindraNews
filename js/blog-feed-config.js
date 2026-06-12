@@ -72,15 +72,26 @@ window.BLOG_FEED_CONFIG = {
    */
   hindiBlogs: [
     {
+      slug: "blog/hindi/dr-vivek-bindra-news-2026-bada-business-msme-programs/",
+      title: "Dr Vivek Bindra News 2026: MSMEs के लिए क्या नया कर रहे हैं Bada Business के फाउंडर?",
+      excerpt: "जानिए Dr Vivek Bindra News 2026 में Bada Business के नए प्रोग्राम्स, CGP 2.0, Idea to IPO, MSME ग्रोथ स्ट्रेटेजी, Leadership Funnel Program और एंटरप्रेन्योर्स के लिए नए अवसरों की पूरी जानकारी।",
+      category: "hindi",
+      categoryLabel: "हिंदी ब्लॉग",
+      badge: "नया",
+      date: "2026-06-11",
+      image: "vbHindiMsme2026Hero",
+      featured: true,
+    },
+    {
       slug: "blog/hindi/vivek-bindra-news-2026-business-growth-seminar-course-updates/",
       title: "विवेक बिंद्रा न्यूज़ 2026: बिजनेस ग्रोथ, कोर्सेज और इंडस्ट्री में बढ़ता प्रभाव",
       excerpt: "जानिए विवेक बिंद्रा न्यूज़ 2026 की ताज़ा अपडेट्स, बड़ा बिजनेस के नए सेमिनार, Idea to IPO प्रोग्राम और MSME उद्यमियों के लिए नई पहल।",
       category: "hindi",
       categoryLabel: "हिंदी ब्लॉग",
-      badge: "नया",
+      badge: "हिंदी",
       date: "2026-06-06",
       image: "vbHindiNews2026Hero",
-      featured: true,
+      featured: false,
     },
   ],
 

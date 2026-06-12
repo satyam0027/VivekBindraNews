@@ -13,6 +13,14 @@ window.WEB_STORIES_CONFIG = {
       relatedBlog: "blog/best-entrepreneur-training-program-india/",
     },
     {
+      slug: "/web-stories/dr-vivek-bindra-news-2026-msme-hindi-web-story/",
+      title: "Dr Vivek Bindra News 2026: MSMEs के लिए क्या नया?",
+      excerpt: "जानिए 2026 में Bada Business के CGP 2.0, Idea to IPO, Leadership Funnel और MSME ग्रोथ प्रोग्राम्स की बड़ी अपडेट्स।",
+      image: "vbHindiMsme2026Hero",
+      date: "2026-06-11",
+      relatedBlog: "blog/hindi/dr-vivek-bindra-news-2026-bada-business-msme-programs/",
+    },
+    {
       slug: "/web-stories/vivek-bindra-news-2026-hindi-web-story/",
       title: "विवेक बिंद्रा न्यूज़ 2026: बिजनेस ग्रोथ, सेमिनार और बड़ा बिजनेस की नई पहल",
       excerpt: "जानिए विवेक बिंद्रा न्यूज़ 2026 की बड़ी अपडेट्स — नए बिजनेस सेमिनार, Idea to IPO, Leadership Funnel और MSME ग्रोथ स्ट्रेटेजी।",

@@ -523,6 +523,11 @@
   margin-bottom: 0.75rem;
 }
 
+#blog-english-title,
+#blog-hindi-title {
+  scroll-margin-top: 5.5rem;
+}
+
 .blog-hub__hindi {
   margin-top: 2.5rem;
   padding-top: 2rem;
