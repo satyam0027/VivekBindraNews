@@ -4,6 +4,22 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
+    <loc>https://www.vivekbindranews.com/leadership-motivation/motivational-quotes-by-dr-vivek-bindra/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Vivek Bindra News</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-06-11T10:00:00+05:30</news:publication_date>
+      <news:title>Motivational Quotes by Dr. Vivek Bindra: Lessons That Can Transform Your Life</news:title>
+    </news:news>
+    <image:image>
+      <image:loc>https://www.vivekbindranews.com/images/vivek-bindra-motivational-quote-gain-something-do-something.webp</image:loc>
+      <image:title>Dr Vivek Bindra motivational quote – To gain something you have to do something</image:title>
+    </image:image>
+  </url>
+
+  <url>
     <loc>https://www.vivekbindranews.com/news/dr-vivek-bindra-aurita-natural-diamonds-growth/</loc>
     <news:news>
       <news:publication>

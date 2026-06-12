@@ -89,7 +89,19 @@ window.NEWS_SUBPAGE_CONFIG = {
   },
   "entrepreneur-news": { stories: [] },
   "startup-news": { stories: [] },
-  "leadership-motivation": { stories: [] },
+  "leadership-motivation": {
+    stories: [
+      {
+        slug: "motivational-quotes-by-dr-vivek-bindra/",
+        title: "Motivational Quotes by Dr. Vivek Bindra: Lessons That Can Transform Your Life",
+        excerpt: "Discover 10 powerful motivational quotes by Dr. Vivek Bindra — mindset, career, and success lessons that inspire millions worldwide.",
+        badge: "Featured",
+        date: "2026-06-11",
+        image: "vbMotivationalQuoteGain",
+        featured: true,
+      },
+    ],
+  },
   "latest-business-news": {
     stories: [
       {

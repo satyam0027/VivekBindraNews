@@ -4,6 +4,16 @@
 window.SITE_NEWS_CONFIG = {
   stories: [
     {
+      slug: "leadership-motivation/motivational-quotes-by-dr-vivek-bindra/",
+      title: "Motivational Quotes by Dr. Vivek Bindra: Lessons That Can Transform Your Life",
+      excerpt: "Discover 10 powerful motivational quotes by Dr. Vivek Bindra — mindset, career, and success lessons that inspire millions worldwide.",
+      categoryLabel: "Leadership & Motivation",
+      badge: "Featured",
+      date: "2026-06-11",
+      image: "vbMotivationalQuoteGain",
+      featured: false,
+    },
+    {
       slug: "news/dr-vivek-bindra-aurita-natural-diamonds-growth/",
       title: "How Dr Vivek Bindra Helped Aurita Natural Diamonds Achieve 4x Inventory Turnover and 250% Business Growth",
       excerpt: "Ahmedabad jewellery brand Aurita Natural Diamonds reports 4x inventory rotation, ₹10 Cr additional revenue, and ₹2.5 Cr internally funded store expansion after Bada Business consulting.",

@@ -264,6 +264,24 @@
       height: 416,
       alt: "Who really needs a startup business coach in India for business growth and scaling success",
     },
+    vbMotivationalQuoteGain: {
+      file: "vivek-bindra-motivational-quote-gain-something-do-something.webp",
+      width: 624,
+      height: 351,
+      alt: "Dr Vivek Bindra motivational quote – To gain something you have to do something",
+    },
+    vbThinkActAchieve: {
+      file: "vivek-bindra-think-act-achieve-inspiration-motivation.webp",
+      width: 624,
+      height: 312,
+      alt: "Vivek Bindra News – Think Act Achieve – Inspiration Motivation Transformation",
+    },
+    vbLeadershipFunnelSpeech: {
+      file: "dr-vivek-bindra-leadership-funnel-program-speech.webp",
+      width: 624,
+      height: 351,
+      alt: "Dr Vivek Bindra speaking at Leadership Funnel Program seminar with microphone",
+    },
     hiringConsultantHero: {
       file: "benefits-of-hiring-business-consultant-small-business-growth.webp",
       width: 1200,
