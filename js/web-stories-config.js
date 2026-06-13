@@ -5,6 +5,14 @@
 window.WEB_STORIES_CONFIG = {
   stories: [
     {
+      slug: "/web-stories/failure-to-success-entrepreneur-journey-stories/",
+      title: "From Failure to Success: Inspiring Entrepreneur Journey Stories",
+      excerpt: "Every successful entrepreneur has a hidden story. Discover how Dr Vivek Bindra helps Indian founders turn failure into long-term business success.",
+      image: "failureToSuccessHero",
+      date: "2026-06-11",
+      relatedBlog: "blog/from-failure-to-success-inspiring-entrepreneur-journey-stories/",
+    },
+    {
       slug: "/web-stories/best-entrepreneur-training-program-startup-founders-india-web-story/",
       title: "Best Entrepreneur Training Program for Startup Founders in India",
       excerpt: "Discover the best entrepreneur training program in India with Dr Vivek Bindra and Bada Business — leadership, mentorship, and startup growth.",

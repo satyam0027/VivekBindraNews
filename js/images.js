@@ -282,6 +282,24 @@
       height: 351,
       alt: "Dr Vivek Bindra speaking at Leadership Funnel Program seminar with microphone",
     },
+    failureToSuccessHero: {
+      file: "from-failure-to-success-inspiring-entrepreneur-journey-stories.webp",
+      width: 624,
+      height: 416,
+      alt: "From Failure to Success inspiring entrepreneur journey stories showing business growth, leadership, and entrepreneurial success in India",
+    },
+    vbBindraCoachFailureSide: {
+      file: "dr-vivek-bindra-business-coach-entrepreneur-success-story.webp",
+      width: 624,
+      height: 416,
+      alt: "Dr Vivek Bindra business coach inspiring Indian entrepreneurs with leadership, business education, and entrepreneurial success strategies",
+    },
+    smeOwnerIpoGrowth: {
+      file: "sme-owner-ipo-business-growth-dr-vivek-bindra.webp",
+      width: 624,
+      height: 416,
+      alt: "SME owner planning IPO with Dr Vivek Bindra business growth strategy, leadership development, and long-term wealth creation framework",
+    },
     hiringConsultantHero: {
       file: "benefits-of-hiring-business-consultant-small-business-growth.webp",
       width: 1200,

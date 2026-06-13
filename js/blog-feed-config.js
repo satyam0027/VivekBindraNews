@@ -10,15 +10,26 @@ window.BLOG_FEED_CONFIG = {
 
   blogs: [
     {
+      slug: "blog/from-failure-to-success-inspiring-entrepreneur-journey-stories/",
+      title: "From Failure to Success: Inspiring Entrepreneur Journey Stories",
+      excerpt: "Read inspiring entrepreneur journey stories and discover how Dr Vivek Bindra helped Indian business owners overcome failure, scale businesses, and achieve long-term success.",
+      category: "entrepreneurship",
+      categoryLabel: "Blog",
+      badge: "New",
+      date: "2026-06-11",
+      image: "failureToSuccessHero",
+      featured: true,
+    },
+    {
       slug: "blog/best-entrepreneur-training-program-india/",
       title: "Best Entrepreneur Training Program for Startup Founders in India",
       excerpt: "Discover India's best entrepreneur training program for startup founders with business mentorship, leadership training, and growth strategies from Dr Vivek Bindra and Bada Business.",
       category: "entrepreneurship",
       categoryLabel: "Blog",
-      badge: "New",
+      badge: "Featured",
       date: "2026-06-04",
       image: "entrepreneurTrainingHero",
-      featured: true,
+      featured: false,
     },
     {
       slug: "blog/vivek-bindra-news-2026/",
