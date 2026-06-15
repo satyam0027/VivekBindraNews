@@ -10,15 +10,26 @@ window.BLOG_FEED_CONFIG = {
 
   blogs: [
     {
+      slug: "blog/top-business-principles-entrepreneurs-can-learn-from-dr-vivek-bindra/",
+      title: "Top Business Principles Entrepreneurs Can Learn from Dr Vivek Bindra",
+      excerpt: "Learn the top business principles entrepreneurs can adopt from Dr Vivek Bindra, including leadership, execution, business systems, accountability, and customer focus.",
+      category: "entrepreneurship",
+      categoryLabel: "Blog",
+      badge: "New",
+      date: "2026-06-12",
+      image: "topBusinessPrinciplesHero",
+      featured: true,
+    },
+    {
       slug: "blog/from-failure-to-success-inspiring-entrepreneur-journey-stories/",
       title: "From Failure to Success: Inspiring Entrepreneur Journey Stories",
       excerpt: "Read inspiring entrepreneur journey stories and discover how Dr Vivek Bindra helped Indian business owners overcome failure, scale businesses, and achieve long-term success.",
       category: "entrepreneurship",
       categoryLabel: "Blog",
-      badge: "New",
+      badge: "Featured",
       date: "2026-06-11",
       image: "failureToSuccessHero",
-      featured: true,
+      featured: false,
     },
     {
       slug: "blog/best-entrepreneur-training-program-india/",

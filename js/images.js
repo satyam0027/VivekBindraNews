@@ -300,6 +300,24 @@
       height: 416,
       alt: "SME owner planning IPO with Dr Vivek Bindra business growth strategy, leadership development, and long-term wealth creation framework",
     },
+    topBusinessPrinciplesHero: {
+      file: "top-business-principles-dr-vivek-bindra.webp",
+      width: 624,
+      height: 416,
+      alt: "Top business principles entrepreneurs can learn from Dr Vivek Bindra",
+    },
+    whyWatchBindraContent: {
+      file: "why-entrepreneurs-watch-dr-vivek-bindra-content.webp",
+      width: 624,
+      height: 375,
+      alt: "Why entrepreneurs keep watching Dr Vivek Bindra's business content",
+    },
+    leadershipNotBoss: {
+      file: "leadership-isnt-about-being-the-boss.webp",
+      width: 624,
+      height: 416,
+      alt: "Leadership isn't about being the boss business leadership concept",
+    },
     hiringConsultantHero: {
       file: "benefits-of-hiring-business-consultant-small-business-growth.webp",
       width: 1200,

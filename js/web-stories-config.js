@@ -5,6 +5,14 @@
 window.WEB_STORIES_CONFIG = {
   stories: [
     {
+      slug: "/web-stories/top-business-principles-dr-vivek-bindra/",
+      title: "Top Business Principles Every Entrepreneur Should Know",
+      excerpt: "Discover practical business principles inspired by Dr Vivek Bindra — execution, systems, leadership, and continuous learning for sustainable growth.",
+      image: "topBusinessPrinciplesHero",
+      date: "2026-06-12",
+      relatedBlog: "blog/top-business-principles-entrepreneurs-can-learn-from-dr-vivek-bindra/",
+    },
+    {
       slug: "/web-stories/failure-to-success-entrepreneur-journey-stories/",
       title: "From Failure to Success: Inspiring Entrepreneur Journey Stories",
       excerpt: "Every successful entrepreneur has a hidden story. Discover how Dr Vivek Bindra helps Indian founders turn failure into long-term business success.",
