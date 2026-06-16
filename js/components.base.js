@@ -211,12 +211,6 @@
           <ul>${navItems}</ul>
         </nav>
         <div class="header-utils">
-          <form class="header-search" role="search" action="${resolveHref("/news.html")}" method="get">
-            <input type="search" name="q" placeholder="Search news..." aria-label="Search">
-            <span class="header-search__icon" aria-hidden="true">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-            </span>
-          </form>
           <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">${moonIcon}</button>
         </div>
       </div>
