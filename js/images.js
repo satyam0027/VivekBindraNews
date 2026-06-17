@@ -318,6 +318,18 @@
       height: 416,
       alt: "Leadership isn't about being the boss business leadership concept",
     },
+    smesHireConsultantsHero: {
+      file: "top-5-reasons-smes-hire-business-consultants-india.webp",
+      width: 624,
+      height: 416,
+      alt: "Top 5 reasons SMEs hire business consultants in India for business growth and process improvement",
+    },
+    smeConsultantGrowthIndia: {
+      file: "business-consultant-for-small-business-growth-india.webp",
+      width: 1200,
+      height: 675,
+      alt: "Business consultant helping Indian SMEs with growth strategy, business transformation and operational improvement",
+    },
     hiringConsultantHero: {
       file: "benefits-of-hiring-business-consultant-small-business-growth.webp",
       width: 1200,

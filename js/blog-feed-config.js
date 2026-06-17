@@ -10,15 +10,26 @@ window.BLOG_FEED_CONFIG = {
 
   blogs: [
     {
+      slug: "blog/top-reasons-smes-hire-business-consultants-india/",
+      title: "Top 5 Reasons SMEs Hire Business Consultants in India",
+      excerpt: "Discover why SMEs in India hire business consultants for growth, process improvement, business transformation, and long-term success.",
+      category: "entrepreneurship",
+      categoryLabel: "Blog",
+      badge: "New",
+      date: "2026-06-17",
+      image: "smesHireConsultantsHero",
+      featured: true,
+    },
+    {
       slug: "blog/top-business-principles-entrepreneurs-can-learn-from-dr-vivek-bindra/",
       title: "Top Business Principles Entrepreneurs Can Learn from Dr Vivek Bindra",
       excerpt: "Learn the top business principles entrepreneurs can adopt from Dr Vivek Bindra, including leadership, execution, business systems, accountability, and customer focus.",
       category: "entrepreneurship",
       categoryLabel: "Blog",
-      badge: "New",
+      badge: "Featured",
       date: "2026-06-12",
       image: "topBusinessPrinciplesHero",
-      featured: true,
+      featured: false,
     },
     {
       slug: "blog/from-failure-to-success-inspiring-entrepreneur-journey-stories/",
