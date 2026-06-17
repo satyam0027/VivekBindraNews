@@ -4,7 +4,7 @@
 window.SITE_NEWS_CONFIG = {
   stories: [
     {
-      slug: "leadership-motivation/motivational-quotes-by-dr-vivek-bindra/",
+      slug: "/leadership-motivation/motivational-quotes-by-dr-vivek-bindra/",
       title: "Motivational Quotes by Dr. Vivek Bindra: Lessons That Can Transform Your Life",
       excerpt: "Discover 10 powerful motivational quotes by Dr. Vivek Bindra — mindset, career, and success lessons that inspire millions worldwide.",
       categoryLabel: "Leadership & Motivation",

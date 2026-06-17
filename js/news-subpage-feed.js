@@ -25,18 +25,27 @@
     return d.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" });
   }
 
+  function resolveStoryHref(slug) {
+    if (!slug) return "/";
+    if (slug.charAt(0) === "/" || slug.indexOf("../") === 0 || /^https?:\/\//i.test(slug)) {
+      return slug;
+    }
+    return "/" + categoryId + "/" + slug.replace(/^\//, "");
+  }
+
   function renderCard(story) {
+    const href = resolveStoryHref(story.slug);
     return (
       '<article class="card news-card">' +
-        '<a href="' + escapeHtml(story.slug) + '" class="card__image-link">' +
+        '<a href="' + escapeHtml(href) + '" class="card__image-link">' +
           '<div class="media-frame card__media" data-img="' + escapeHtml(story.image) + '" data-img-fit="contain"></div>' +
         '</a>' +
         '<div class="card__body">' +
           '<span class="intent-badge">' + escapeHtml(story.badge) + '</span>' +
           '<span class="card__category">' + escapeHtml(formatDate(story.date)) + '</span>' +
-          '<h3 class="card__title"><a href="' + escapeHtml(story.slug) + '">' + escapeHtml(story.title) + '</a></h3>' +
+          '<h3 class="card__title"><a href="' + escapeHtml(href) + '">' + escapeHtml(story.title) + '</a></h3>' +
           '<p class="card__excerpt">' + escapeHtml(story.excerpt) + '</p>' +
-          '<p class="card__meta"><a href="' + escapeHtml(story.slug) + '">Read story</a></p>' +
+          '<p class="card__meta"><a href="' + escapeHtml(href) + '">Read story</a></p>' +
         '</div>' +
       '</article>'
     );
@@ -56,14 +65,15 @@
 
     const featured = stories.find(function (s) { return s.featured; }) || stories[0];
     const rest = stories.filter(function (s) { return s.slug !== featured.slug; }).slice(0, 4);
+    const featuredHref = resolveStoryHref(featured.slug);
 
     leadEl.innerHTML =
-      '<a href="' + escapeHtml(featured.slug) + '" class="card__image-link">' +
+      '<a href="' + escapeHtml(featuredHref) + '" class="card__image-link">' +
         '<div class="media-frame news-lead__media" data-img="' + escapeHtml(featured.image) + '" data-img-fit="contain" data-img-priority="high"></div>' +
       '</a>' +
       '<div class="news-lead__body">' +
         '<span class="news-kicker">Top Story</span>' +
-        '<h2 class="news-lead__title"><a href="' + escapeHtml(featured.slug) + '">' + escapeHtml(featured.title) + '</a></h2>' +
+        '<h2 class="news-lead__title"><a href="' + escapeHtml(featuredHref) + '">' + escapeHtml(featured.title) + '</a></h2>' +
         '<p class="news-lead__dek">' + escapeHtml(featured.excerpt) + '</p>' +
         '<time class="news-headline__meta" datetime="' + escapeHtml(featured.date) + '">' + formatDate(featured.date) + '</time>' +
       '</div>';
@@ -71,14 +81,15 @@
     if (headlinesEl && rest.length) {
       headlinesEl.innerHTML = rest
         .map(function (story) {
+          const href = resolveStoryHref(story.slug);
           return (
             '<article class="news-headline">' +
-              '<a href="' + escapeHtml(story.slug) + '" class="card__image-link">' +
+              '<a href="' + escapeHtml(href) + '" class="card__image-link">' +
                 '<div class="media-frame news-headline__thumb" data-img="' + escapeHtml(story.image) + '" data-img-fit="contain"></div>' +
               '</a>' +
               '<div>' +
                 '<span class="news-kicker">' + escapeHtml(story.badge) + '</span>' +
-                '<h3 class="news-headline__title"><a href="' + escapeHtml(story.slug) + '">' + escapeHtml(story.title) + '</a></h3>' +
+                '<h3 class="news-headline__title"><a href="' + escapeHtml(href) + '">' + escapeHtml(story.title) + '</a></h3>' +
                 '<time class="news-headline__meta" datetime="' + escapeHtml(story.date) + '">' + formatDate(story.date) + '</time>' +
               '</div>' +
             '</article>'

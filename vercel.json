@@ -1,4 +1,16 @@
 {
     "cleanUrls": true,
-    "trailingSlash": false
+    "trailingSlash": false,
+    "redirects": [
+      {
+        "source": "/motivational-quotes-by-dr-vivek-bindra",
+        "destination": "/leadership-motivation/motivational-quotes-by-dr-vivek-bindra",
+        "permanent": true
+      },
+      {
+        "source": "/motivational-quotes-by-dr-vivek-bindra/",
+        "destination": "/leadership-motivation/motivational-quotes-by-dr-vivek-bindra",
+        "permanent": true
+      }
+    ]
   }
