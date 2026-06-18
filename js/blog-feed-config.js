@@ -105,15 +105,26 @@ window.BLOG_FEED_CONFIG = {
    */
   hindiBlogs: [
     {
+      slug: "blog/hindi/business-coach-kaun-hota-hai-business-growth-guide/",
+      title: "बिजनेस कोच क्या होता है? Business Coach आपके व्यापार को कैसे बढ़ाता है",
+      excerpt: "जानिए बिजनेस कोच क्या होता है, Business Consultant और Business Advisor से कैसे अलग है और यह Small Business की Growth, Sales और Team Management में कैसे मदद करता है।",
+      category: "hindi",
+      categoryLabel: "हिंदी ब्लॉग",
+      badge: "नया",
+      date: "2026-06-18",
+      image: "hindiBusinessCoachHero",
+      featured: true,
+    },
+    {
       slug: "blog/hindi/dr-vivek-bindra-news-2026-bada-business-msme-programs/",
       title: "Dr Vivek Bindra News 2026: MSMEs के लिए क्या नया कर रहे हैं Bada Business के फाउंडर?",
       excerpt: "जानिए Dr Vivek Bindra News 2026 में Bada Business के नए प्रोग्राम्स, CGP 2.0, Idea to IPO, MSME ग्रोथ स्ट्रेटेजी, Leadership Funnel Program और एंटरप्रेन्योर्स के लिए नए अवसरों की पूरी जानकारी।",
       category: "hindi",
       categoryLabel: "हिंदी ब्लॉग",
-      badge: "नया",
+      badge: "हिंदी",
       date: "2026-06-11",
       image: "vbHindiMsme2026Hero",
-      featured: true,
+      featured: false,
     },
     {
       slug: "blog/hindi/vivek-bindra-news-2026-business-growth-seminar-course-updates/",
@@ -135,15 +146,26 @@ window.BLOG_FEED_CONFIG = {
 
   articles: [
     {
+      slug: "/article/how-a-business-coach-can-help-scale-your-company-faster/",
+      title: "How a Business Coach Can Help Scale Your Company Faster",
+      excerpt: "Learn how business coaching helps companies across India improve leadership, build scalable systems, and accelerate growth through proven coaching strategies.",
+      category: "guides",
+      categoryLabel: "Article",
+      badge: "New",
+      date: "2026-06-18",
+      image: "businessCoachScaleHero",
+      featured: true,
+    },
+    {
       slug: "/article/top-business-coaches-in-india/",
       title: "Top Business Coaches in India Helping Entrepreneurs Scale Faster",
       excerpt: "Discover the top business coaches in India helping entrepreneurs and startups scale faster. Compare the best business mentors, leadership coaches, and startup coaches.",
       category: "guides",
       categoryLabel: "Article",
-      badge: "New",
+      badge: "Featured",
       date: "2026-06-06",
       image: "topBusinessCoachesIndiaHero",
-      featured: true,
+      featured: false,
     },
     {
       slug: "/article/vivek-bindra-news-journey-achievements-latest-updates/",

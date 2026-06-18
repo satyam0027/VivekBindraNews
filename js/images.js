@@ -330,6 +330,42 @@
       height: 675,
       alt: "Business consultant helping Indian SMEs with growth strategy, business transformation and operational improvement",
     },
+    businessCoachScaleHero: {
+      file: "how-business-coach-help-scale-company-faster-india.webp",
+      width: 1536,
+      height: 1024,
+      alt: "Business coach helping a company scale faster",
+    },
+    businessCoachingCompanyGrowth: {
+      file: "business-coaching-company-growth.webp",
+      width: 1536,
+      height: 1024,
+      alt: "Business coaching for company growth and leadership",
+    },
+    hindiBusinessCoachHero: {
+      file: "business-coach-kaun-hota-hai-business-growth.webp",
+      width: 1536,
+      height: 1024,
+      alt: "बिजनेस कोच कौन होता है और यह आपके व्यापार की ग्रोथ, सेल्स और टीम मैनेजमेंट को कैसे बढ़ाता है",
+    },
+    hindiBusinessCoachGrowthHelp: {
+      file: "how-business-coach-helps-business-growth.webp",
+      width: 1662,
+      height: 946,
+      alt: "व्यवसाय को बढ़ाने में बिजनेस कोच की भूमिका, बिजनेस स्ट्रेटेजी, टीम मैनेजमेंट और बिजनेस ग्रोथ",
+    },
+    hindiBusinessConsultantSmallBiz: {
+      file: "business-consultant-for-small-business-hindi.webp",
+      width: 1536,
+      height: 1024,
+      alt: "Small Business के लिए Business Consultant क्यों जरूरी है और यह बिजनेस ग्रोथ में कैसे मदद करता है",
+    },
+    coachVsConsultantScaleArticle: {
+      file: "business-coach-vs-business-growth-consultant.webp",
+      width: 1536,
+      height: 1024,
+      alt: "Business coach vs business growth consultant comparison",
+    },
     hiringConsultantHero: {
       file: "benefits-of-hiring-business-consultant-small-business-growth.webp",
       width: 1200,
