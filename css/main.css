@@ -168,18 +168,19 @@ img {
   color: var(--color-heading);
 }
 
-/* Web story preview cards — natural image height */
+/* Web story preview cards — uniform 3:2 frame (see bbc-news.css for full rules) */
 .card.news-card--web-story .card__media--web-story {
-  aspect-ratio: auto;
+  aspect-ratio: 3 / 2;
   height: auto;
   min-height: 0;
-  background: #f0f4f8;
+  background: #eef2f6;
 }
 
 .card.news-card--web-story .card__media--web-story .media-img {
-  position: static;
+  position: absolute;
+  inset: 0;
   width: 100% !important;
-  height: auto !important;
+  height: 100% !important;
   object-fit: contain;
   object-position: center center;
 }
